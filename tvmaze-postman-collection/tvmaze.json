@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "115d3995-97c7-4886-99a8-cbf40c76d7c2",
+		"name": "tvmaze-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TV show search",
+			"_postman_id": "9e6aef06-b53c-4fdb-8455-7f4b0ed6feb6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tvmaze",
+						"com"
+					],
+					"path": [
+						"search",
+						"shows"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "mind-hunter"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "fe84977a-6670-45ae-9897-24f7dd7e92a4",
+					"name": "error-400",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-mock-match-request-name",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-400",
+							"protocol": "https",
+							"host": [
+								"3d26c040-9089-4a24-8b67-4c638255e473",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "mind-hunter-400"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 400\n}"
+				},
+				{
+					"id": "e57b0ee7-d20b-472e-9edc-d57404095214",
+					"name": "error-500",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-mock-match-request-name",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-500",
+							"protocol": "https",
+							"host": [
+								"3d26c040-9089-4a24-8b67-4c638255e473",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "mind-hunter-500"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 500\n}"
+				},
+				{
+					"id": "b8a6ffbc-2767-4b53-9cb6-85f57cd122c9",
+					"name": "error-503",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-mock-match-request-name",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-503",
+							"protocol": "https",
+							"host": [
+								"3d26c040-9089-4a24-8b67-4c638255e473",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "mind-hunter-503"
+								}
+							]
+						}
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 503\n}"
+				}
+			]
+		}
+	]
+}
