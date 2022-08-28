@@ -75,7 +75,7 @@
 					"header": null,
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman \",\n    \"code\": 0,\n    \"status\": 400\n}"
+					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman test\",\n    \"code\": 0,\n    \"status\": 400\n}"
 				},
 				{
 					"id": "e57b0ee7-d20b-472e-9edc-d57404095214",
