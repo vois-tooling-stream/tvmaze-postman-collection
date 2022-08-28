@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "TV show search",
-			"_postman_id": "9e6aef06-b53c-4fdb-8455-7f4b0ed6feb6",
+			"id": "9e6aef06-b53c-4fdb-8455-7f4b0ed6feb6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -75,7 +75,7 @@
 					"header": null,
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 400\n}"
+					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman \",\n    \"code\": 0,\n    \"status\": 400\n}"
 				},
 				{
 					"id": "e57b0ee7-d20b-472e-9edc-d57404095214",
