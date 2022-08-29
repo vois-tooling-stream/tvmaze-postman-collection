@@ -427,7 +427,7 @@
 				},
 				{
 					"id": "18c87cd3-fcbe-4527-9313-7ffece18e67c",
-					"name": "TV Show Search",
+					"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
