@@ -463,7 +463,7 @@
 				},
 				{
 					"id": "439a0380-cd8e-459c-ace1-32fb8310f737",
-					"name": "TV Show Search",
+					"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
