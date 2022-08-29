@@ -6,202 +6,100 @@
 	},
 	"item": [
 		{
-			"name": "TV_Shows_Search",
-			"item": [],
-			"id": "a3a2718d-a9f0-4980-93a6-3b05f4320e7e"
-		},
-		{
-			"name": "TV Show Search",
-			"id": "9e6aef06-b53c-4fdb-8455-7f4b0ed6feb6",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter",
-					"protocol": "https",
-					"host": [
-						"api",
-						"tvmaze",
-						"com"
-					],
-					"path": [
-						"search",
-						"shows"
-					],
-					"query": [
+			"name": "TVSearch",
+			"item": [
+				{
+					"name": "TV Single Search",
+					"id": "697ecedb-5be4-4884-a714-d5a6d4d63a0f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
 						{
-							"key": "q",
-							"value": "mind-hunter"
+							"id": "439a0380-cd8e-459c-ace1-32fb8310f737",
+							"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episode",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"singlesearch",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "mind-hunter"
+										},
+										{
+											"key": "embed",
+											"value": "episode"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "18c87cd3-fcbe-4527-9313-7ffece18e67c",
+							"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episodes",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"singlesearch",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "mind-hunter"
+										},
+										{
+											"key": "embed",
+											"value": "episodes"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
 					]
-				}
-			},
-			"response": [
-				{
-					"id": "fe84977a-6670-45ae-9897-24f7dd7e92a4",
-					"name": "error-400",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-mock-match-request-name",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-400",
-							"protocol": "https",
-							"host": [
-								"3d26c040-9089-4a24-8b67-4c638255e473",
-								"mock",
-								"pstmn",
-								"io"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter-400"
-								}
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"name\": \"Bad Request change omar test\",\n    \"message\": \"Missing required parameters: q FROM postman test\",\n    \"code\": 0,\n    \"status\": 400\n}"
 				},
 				{
-					"id": "e57b0ee7-d20b-472e-9edc-d57404095214",
-					"name": "error-500",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-mock-match-request-name",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-500",
-							"protocol": "https",
-							"host": [
-								"3d26c040-9089-4a24-8b67-4c638255e473",
-								"mock",
-								"pstmn",
-								"io"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter-500"
-								}
-							]
-						}
+					"name": "TV Show Search",
+					"id": "9e6aef06-b53c-4fdb-8455-7f4b0ed6feb6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					"status": "Internal Server Error",
-					"code": 500,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 500\n}"
-				},
-				{
-					"id": "b8a6ffbc-2767-4b53-9cb6-85f57cd122c9",
-					"name": "error-503",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-mock-match-request-name",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-503",
-							"protocol": "https",
-							"host": [
-								"3d26c040-9089-4a24-8b67-4c638255e473",
-								"mock",
-								"pstmn",
-								"io"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter-503"
-								}
-							]
-						}
-					},
-					"status": "Service Unavailable",
-					"code": 503,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 503\n}"
-				},
-				{
-					"id": "7de6a3c3-d8d4-4bb7-8848-609fc7543c00",
-					"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=12312312312321",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "12312312312321"
-								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "fb63effc-5900-47e1-aa20-f2aff72a3ab9",
-					"name": "TVSearch_SearchShows_GetShowsList_200",
-					"originalRequest": {
+					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -224,295 +122,398 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "cd1ff4a9-ed56-41a0-9cb7-35db186095eb",
-					"name": "TVSearch_SearchShows_GetShowsListWithTwoQueryParameters_200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter&q=arrow",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter"
-								},
-								{
-									"key": "q",
-									"value": "arrow"
+					"response": [
+						{
+							"id": "fe84977a-6670-45ae-9897-24f7dd7e92a4",
+							"name": "error-400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-mock-match-request-name",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-400",
+									"protocol": "https",
+									"host": [
+										"3d26c040-9089-4a24-8b67-4c638255e473",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "mind-hunter-400"
+										}
+									]
 								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "42afdf57-bdfe-49c8-92d7-34fe3913cd51",
-					"name": "TVSearch_SearchShows_GetEmptyShowsListWithEmptyQuery_200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": ""
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"name\": \"Bad Request change omar test\",\n    \"message\": \"Missing required parameters: q FROM postman test\",\n    \"code\": 0,\n    \"status\": 400\n}"
+						},
+						{
+							"id": "e57b0ee7-d20b-472e-9edc-d57404095214",
+							"name": "error-500",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-mock-match-request-name",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-500",
+									"protocol": "https",
+									"host": [
+										"3d26c040-9089-4a24-8b67-4c638255e473",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "mind-hunter-500"
+										}
+									]
 								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "8115b15e-a05f-4a7e-bea2-2948b4534def",
-					"name": "TVSearch_SearchShows_MissingQueryParameter_400",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "arrow",
-									"disabled": true
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 500\n}"
+						},
+						{
+							"id": "b8a6ffbc-2767-4b53-9cb6-85f57cd122c9",
+							"name": "error-503",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-mock-match-request-name",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-503",
+									"protocol": "https",
+									"host": [
+										"3d26c040-9089-4a24-8b67-4c638255e473",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "mind-hunter-503"
+										}
+									]
 								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "475da32b-f28b-42ad-9653-52e4c9e2a61a",
-					"name": "TVSearch_SearchShows_InvalidQueryParameterKey_400",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?qs=arrow",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "qs",
-									"value": "arrow"
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 503\n}"
+						},
+						{
+							"id": "7de6a3c3-d8d4-4bb7-8848-609fc7543c00",
+							"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows?q=12312312312321",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "12312312312321"
+										}
+									]
 								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "066a6e93-1033-49db-9886-4861cbed29be",
-					"name": "TVSearch_SearchShows_MethodNotAllowed_405",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=arrow",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "arrow"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "fb63effc-5900-47e1-aa20-f2aff72a3ab9",
+							"name": "TVSearch_SearchShows_GetShowsList_200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "mind-hunter"
+										}
+									]
 								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "c445f3d3-32e0-4571-b5ce-aeef95784b37",
-					"name": "TVSearch_SearchShows_InvalidPathParameter_404",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows1"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "arrow"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "cd1ff4a9-ed56-41a0-9cb7-35db186095eb",
+							"name": "TVSearch_SearchShows_GetShowsListWithTwoQueryParameters_200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter&q=arrow",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "mind-hunter"
+										},
+										{
+											"key": "q",
+											"value": "arrow"
+										}
+									]
 								}
-							]
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "42afdf57-bdfe-49c8-92d7-34fe3913cd51",
+							"name": "TVSearch_SearchShows_GetEmptyShowsListWithEmptyQuery_200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows?q=",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": ""
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "8115b15e-a05f-4a7e-bea2-2948b4534def",
+							"name": "TVSearch_SearchShows_MissingQueryParameter_400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "arrow",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "475da32b-f28b-42ad-9653-52e4c9e2a61a",
+							"name": "TVSearch_SearchShows_InvalidQueryParameterKey_400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows?qs=arrow",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "qs",
+											"value": "arrow"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "066a6e93-1033-49db-9886-4861cbed29be",
+							"name": "TVSearch_SearchShows_MethodNotAllowed_405",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows?q=arrow",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "arrow"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "c445f3d3-32e0-4571-b5ce-aeef95784b37",
+							"name": "TVSearch_SearchShows_InvalidPathParameter_404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tvmaze",
+										"com"
+									],
+									"path": [
+										"search",
+										"shows1"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "arrow"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
+					]
 				}
-			]
-		},
-		{
-			"name": "TV Single Search",
-			"id": "697ecedb-5be4-4884-a714-d5a6d4d63a0f",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": [
-				{
-					"id": "439a0380-cd8e-459c-ace1-32fb8310f737",
-					"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episode",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"singlesearch",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter"
-								},
-								{
-									"key": "embed",
-									"value": "episode"
-								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "18c87cd3-fcbe-4527-9313-7ffece18e67c",
-					"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episodes",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"singlesearch",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter"
-								},
-								{
-									"key": "embed",
-									"value": "episodes"
-								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				}
-			]
+			],
+			"id": "a3a2718d-a9f0-4980-93a6-3b05f4320e7e"
 		}
 	]
 }
