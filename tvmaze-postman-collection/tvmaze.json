@@ -12,10 +12,10 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.tvmaze.com/search/shows1?qs=mind-hunter-400",
+					"raw": "https://api.tvmaze.com/search/shows1?q=mind-hunter-400&q=arrow",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -28,8 +28,12 @@
 					],
 					"query": [
 						{
-							"key": "qs",
+							"key": "q",
 							"value": "mind-hunter-400"
+						},
+						{
+							"key": "q",
+							"value": "arrow"
 						}
 					]
 				}
