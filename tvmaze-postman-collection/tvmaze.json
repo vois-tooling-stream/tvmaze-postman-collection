@@ -226,6 +226,78 @@
 					"body": null
 				},
 				{
+					"id": "18c87cd3-fcbe-4527-9313-7ffece18e67c",
+					"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episodes",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tvmaze",
+								"com"
+							],
+							"path": [
+								"singlesearch",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "mind-hunter"
+								},
+								{
+									"key": "embed",
+									"value": "episodes"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				},
+				{
+					"id": "cd1ff4a9-ed56-41a0-9cb7-35db186095eb",
+					"name": "TVSearch_SearchShows_GetShowsListWithTwoQueryParameters_200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter&q=arrow",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tvmaze",
+								"com"
+							],
+							"path": [
+								"search",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "mind-hunter"
+								},
+								{
+									"key": "q",
+									"value": "arrow"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				},
+				{
 					"id": "42afdf57-bdfe-49c8-92d7-34fe3913cd51",
 					"name": "TVSearch_SearchShows_GetEmptyShowsListWithEmptyQuery_200",
 					"originalRequest": {
@@ -264,7 +336,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=arrow",
+							"raw": "https://api.tvmaze.com/search/shows",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -278,7 +350,8 @@
 							"query": [
 								{
 									"key": "q",
-									"value": "arrow"
+									"value": "arrow",
+									"disabled": true
 								}
 							]
 						}
@@ -375,78 +448,6 @@
 								{
 									"key": "q",
 									"value": "arrow"
-								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "cd1ff4a9-ed56-41a0-9cb7-35db186095eb",
-					"name": "TVSearch_SearchShows_GetShowsListWithTwoQueryParameters_200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter&q=arrow",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter"
-								},
-								{
-									"key": "q",
-									"value": "arrow"
-								}
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "18c87cd3-fcbe-4527-9313-7ffece18e67c",
-					"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episodes",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"singlesearch",
-								"shows"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "mind-hunter"
-								},
-								{
-									"key": "embed",
-									"value": "episodes"
 								}
 							]
 						}
