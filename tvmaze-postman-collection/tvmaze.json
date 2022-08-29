@@ -259,7 +259,7 @@
 				},
 				{
 					"id": "8115b15e-a05f-4a7e-bea2-2948b4534def",
-					"name": "TV show search",
+					"name": "TVSearch_SearchShows_MissingQueryParameter_400",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
