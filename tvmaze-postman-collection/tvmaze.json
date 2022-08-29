@@ -497,7 +497,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "TV Single Search",
 			"id": "697ecedb-5be4-4884-a714-d5a6d4d63a0f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
