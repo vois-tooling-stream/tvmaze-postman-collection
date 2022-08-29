@@ -163,7 +163,7 @@
 				},
 				{
 					"id": "7de6a3c3-d8d4-4bb7-8848-609fc7543c00",
-					"name": "success",
+					"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_200",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
