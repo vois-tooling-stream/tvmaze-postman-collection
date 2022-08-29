@@ -323,7 +323,7 @@
 				},
 				{
 					"id": "066a6e93-1033-49db-9886-4861cbed29be",
-					"name": "TV show search",
+					"name": "TVSearch_SearchShows_MethodNotAllowed_405",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
