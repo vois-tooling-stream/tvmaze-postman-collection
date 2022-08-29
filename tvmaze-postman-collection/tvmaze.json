@@ -236,7 +236,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=",
+							"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -250,7 +250,7 @@
 							"query": [
 								{
 									"key": "q",
-									"value": ""
+									"value": "mind-hunter"
 								}
 							]
 						}
