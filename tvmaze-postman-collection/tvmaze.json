@@ -195,7 +195,7 @@
 				},
 				{
 					"id": "fb63effc-5900-47e1-aa20-f2aff72a3ab9",
-					"name": "TV show search",
+					"name": "TVSearch_SearchShows_GetShowsList_200",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
