@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter",
+					"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -23,7 +23,7 @@
 						"com"
 					],
 					"path": [
-						"search",
+						"singlesearch",
 						"shows"
 					],
 					"query": [
