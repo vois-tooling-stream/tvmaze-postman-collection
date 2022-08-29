@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episodes&embed=season1",
+					"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=cast",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -33,11 +33,7 @@
 						},
 						{
 							"key": "embed",
-							"value": "episodes"
-						},
-						{
-							"key": "embed",
-							"value": "season1"
+							"value": "cast"
 						}
 					]
 				}
