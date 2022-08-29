@@ -355,7 +355,7 @@
 				},
 				{
 					"id": "c445f3d3-32e0-4571-b5ce-aeef95784b37",
-					"name": "TV show search",
+					"name": "TVSearch_SearchShows_InvalidPathParameter_405",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
