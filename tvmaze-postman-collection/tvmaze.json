@@ -355,12 +355,12 @@
 				},
 				{
 					"id": "c445f3d3-32e0-4571-b5ce-aeef95784b37",
-					"name": "TVSearch_SearchShows_InvalidPathParameter_405",
+					"name": "TV show search",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=arrow",
+							"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -369,7 +369,7 @@
 							],
 							"path": [
 								"search",
-								"shows"
+								"shows1"
 							],
 							"query": [
 								{
