@@ -460,6 +460,42 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": null
+				},
+				{
+					"id": "439a0380-cd8e-459c-ace1-32fb8310f737",
+					"name": "TV Show Search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.tvmaze.com/singlesearch/shows?q=mind-hunter&embed=episode",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tvmaze",
+								"com"
+							],
+							"path": [
+								"singlesearch",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "mind-hunter"
+								},
+								{
+									"key": "embed",
+									"value": "episode"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
 				}
 			]
 		}
