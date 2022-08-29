@@ -352,6 +352,38 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": null
+				},
+				{
+					"id": "c445f3d3-32e0-4571-b5ce-aeef95784b37",
+					"name": "TV show search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.tvmaze.com/search/shows?q=arrow",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tvmaze",
+								"com"
+							],
+							"path": [
+								"search",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "arrow"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
 				}
 			]
 		}
