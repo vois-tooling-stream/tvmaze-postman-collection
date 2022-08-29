@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "TV show search",
+			"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
 			"id": "9e6aef06-b53c-4fdb-8455-7f4b0ed6feb6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
