@@ -9,7 +9,7 @@
 			"name": "TVSearch",
 			"item": [
 				{
-					"name": "TV Single Search",
+					"name": "SingleSearch",
 					"id": "697ecedb-5be4-4884-a714-d5a6d4d63a0f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
