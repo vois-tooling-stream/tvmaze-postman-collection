@@ -308,12 +308,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter&q=arrow",
-									"protocol": "https",
+									"raw": "{{mock_uri}}/search/shows?q=mind-hunter&q=arrow",
 									"host": [
-										"api",
-										"tvmaze",
-										"com"
+										"{{mock_uri}}"
 									],
 									"path": [
 										"search",
