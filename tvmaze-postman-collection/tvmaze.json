@@ -250,12 +250,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.tvmaze.com/search/shows?q=12312312312321",
-									"protocol": "https",
+									"raw": "{{mock_uri}}/search/shows?q=12312312312321",
 									"host": [
-										"api",
-										"tvmaze",
-										"com"
+										"{{mock_uri}}"
 									],
 									"path": [
 										"search",
