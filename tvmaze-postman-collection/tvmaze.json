@@ -26,11 +26,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{mock_uri}}singlesearch/shows?q=mind-hunter&embed=episode",
+									"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episode",
 									"host": [
-										"{{mock_uri}}singlesearch"
+										"{{mock_uri}}"
 									],
 									"path": [
+										"singlesearch",
 										"shows"
 									],
 									"query": [
