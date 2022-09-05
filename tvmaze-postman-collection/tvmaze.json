@@ -432,12 +432,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.tvmaze.com/search/shows?q=arrow",
-									"protocol": "https",
+									"raw": "{{mock_uri}}/search/shows?q=arrow",
 									"host": [
-										"api",
-										"tvmaze",
-										"com"
+										"{{mock_uri}}"
 									],
 									"path": [
 										"search",
