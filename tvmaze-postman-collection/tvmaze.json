@@ -457,7 +457,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\r\n    \"name\": \"Method Not Allowed\",\r\n    \"message\": \"Method Not Allowed. This URL can only handle the following request methods: GET, HEAD.\",\r\n    \"code\": 0,\r\n    \"status\": 405\r\n}"
 						},
 						{
 							"id": "c445f3d3-32e0-4571-b5ce-aeef95784b37",
