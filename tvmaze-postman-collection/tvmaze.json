@@ -574,7 +574,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{tv_maze}}/shows?page=1",
+									"raw": "{{tv_maze}}/shows?page=0",
 									"host": [
 										"{{tv_maze}}"
 									],
@@ -584,7 +584,7 @@
 									"query": [
 										{
 											"key": "page",
-											"value": "1"
+											"value": "0"
 										}
 									]
 								}
