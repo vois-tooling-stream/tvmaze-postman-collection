@@ -371,7 +371,7 @@
 			"name": "TVShows",
 			"item": [
 				{
-					"name": "New Folder",
+					"name": "ShowsById",
 					"item": [],
 					"id": "6106c931-ae30-41c1-8499-eb71284d0b2a"
 				},
