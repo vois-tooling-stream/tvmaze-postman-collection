@@ -543,7 +543,7 @@
 							"response": [
 								{
 									"id": "1d2423e5-f7c9-4528-a8e7-c317f03813f4",
-									"name": "TVShows_EpisodeByDate_GetEpisodeWithValidQueryParameters_200 Copy",
+									"name": "TVShows_EpisodeBySeason_GetEpisodeWithValidQueryParameters_200",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
