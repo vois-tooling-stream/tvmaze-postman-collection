@@ -542,28 +542,31 @@
 							},
 							"response": [
 								{
-									"id": "e5e089a3-55a2-4833-b3de-1eff7107041e",
-									"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
+									"id": "1d2423e5-f7c9-4528-a8e7-c317f03813f4",
+									"name": "TVShows_EpisodeByDate_GetEpisodeWithValidQueryParameters_200 Copy",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episode",
+											"raw": "{{mock_uri}}/shows/:id/episodesbydate?date=2013-07-01",
 											"host": [
 												"{{mock_uri}}"
 											],
 											"path": [
-												"singlesearch",
-												"shows"
+												"shows",
+												":id",
+												"episodesbydate"
 											],
 											"query": [
 												{
-													"key": "q",
-													"value": "mind-hunter"
-												},
+													"key": "date",
+													"value": "2013-07-01"
+												}
+											],
+											"variable": [
 												{
-													"key": "embed",
-													"value": "episode"
+													"key": "id",
+													"value": "1"
 												}
 											]
 										}
@@ -572,40 +575,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "3324990a-bfb3-41f5-8ffe-079cc6318ef2",
-									"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episodes",
-											"host": [
-												"{{mock_uri}}"
-											],
-											"path": [
-												"singlesearch",
-												"shows"
-											],
-											"query": [
-												{
-													"key": "q",
-													"value": "mind-hunter"
-												},
-												{
-													"key": "embed",
-													"value": "episodes"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
+									"body": "[\r\n    {\r\n        \"id\": 2,\r\n        \"url\": \"https://www.tvmaze.com/episodes/2/under-the-dome-1x02-the-fire\",\r\n        \"name\": \"The Fire\",\r\n        \"season\": 1,\r\n        \"number\": 2,\r\n        \"type\": \"regular\",\r\n        \"airdate\": \"2013-07-01\",\r\n        \"airtime\": \"22:00\",\r\n        \"airstamp\": \"2013-07-02T02:00:00+00:00\",\r\n        \"runtime\": 60,\r\n        \"rating\": {\r\n            \"average\": 7.3\r\n        },\r\n        \"image\": {\r\n            \"medium\": \"https://static.tvmaze.com/uploads/images/medium_landscape/1/4389.jpg\",\r\n            \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/1/4389.jpg\"\r\n        },\r\n        \"summary\": \"<p>While the residents of Chester's Mill face the uncertainty of life in the dome, panic is heightened when a house goes up in flames and their fire department is outside of the dome.</p>\",\r\n        \"_links\": {\r\n            \"self\": {\r\n                \"href\": \"https://api.tvmaze.com/episodes/2\"\r\n            }\r\n        }\r\n    }\r\n]"
 								}
 							]
 						}
