@@ -97,9 +97,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{mock_uri}}/search/shows?q=mind-hunter",
+							"raw": "https://api.tvmaze.com/search/shows?q=mind-hunter",
+							"protocol": "https",
 							"host": [
-								"{{mock_uri}}"
+								"api",
+								"tvmaze",
+								"com"
 							],
 							"path": [
 								"search",
