@@ -97,7 +97,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{mock_uri}}/search/shows?q=mind-hunter",
+							"raw": "{{mock_uri}}/search/shows?q=12312312312321",
 							"host": [
 								"{{mock_uri}}"
 							],
@@ -108,7 +108,7 @@
 							"query": [
 								{
 									"key": "q",
-									"value": "mind-hunter"
+									"value": "12312312312321"
 								}
 							]
 						}
