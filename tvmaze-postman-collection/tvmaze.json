@@ -596,7 +596,21 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": "{{mock_uri}}/shows"
+										"url": {
+											"raw": "{{mock_uri}}/shows?page=0",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"shows"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": null,
 									"header": null,
