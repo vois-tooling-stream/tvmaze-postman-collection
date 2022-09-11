@@ -578,7 +578,7 @@
 							"response": [
 								{
 									"id": "de4b3489-e2b9-47fa-96c1-f7e54a929f51",
-									"name": "TVShows_EpisodeByNumber_GetEpisodeWithValidQueryParameters_200",
+									"name": "TVShows_AllShows_GetEpisodeWithValidQueryParameters_200",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
