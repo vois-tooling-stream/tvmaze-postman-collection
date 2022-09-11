@@ -383,7 +383,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{tv_maze}}/shows/:id/episodebynumber?season=:season&number=:number",
+									"raw": "{{tv_maze}}/shows/:id/episodebynumber?season=1&number=1",
 									"host": [
 										"{{tv_maze}}"
 									],
@@ -395,17 +395,17 @@
 									"query": [
 										{
 											"key": "season",
-											"value": ":season"
+											"value": "1"
 										},
 										{
 											"key": "number",
-											"value": ":number"
+											"value": "1"
 										}
 									],
 									"variable": [
 										{
 											"key": "id",
-											"value": null
+											"value": "5"
 										}
 									]
 								}
