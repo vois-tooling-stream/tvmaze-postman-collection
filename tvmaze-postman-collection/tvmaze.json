@@ -486,7 +486,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\r\n    \"name\": \"Not Found\",\r\n    \"message\": \"Page not found.\",\r\n    \"code\": 0,\r\n    \"status\": 404,\r\n    \"previous\": {\r\n        \"name\": \"Invalid Route\",\r\n        \"message\": \"Unable to resolve the request: search/shows1\",\r\n        \"code\": 0\r\n    }\r\n}"
 						}
 					]
 				}
