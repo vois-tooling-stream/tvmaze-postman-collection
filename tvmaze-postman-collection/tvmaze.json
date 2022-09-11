@@ -573,34 +573,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{tv_maze}}/shows/:id/episodebynumber?season=1&number=1",
-									"host": [
-										"{{tv_maze}}"
-									],
-									"path": [
-										"shows",
-										":id",
-										"episodebynumber"
-									],
-									"query": [
-										{
-											"key": "season",
-											"value": "1"
-										},
-										{
-											"key": "number",
-											"value": "1"
-										}
-									],
-									"variable": [
-										{
-											"id": "45eed8b4-c893-4431-a855-6cf3f16503ae",
-											"key": "id",
-											"value": "5"
-										}
-									]
-								}
+								"url": "{{tv_maze}}/shows"
 							},
 							"response": [
 								{
