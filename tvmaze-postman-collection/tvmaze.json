@@ -539,7 +539,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{tv_maze}}/shows/1/seasons"
+								"url": "{{mock_uri}}/shows/1/seasons"
 							},
 							"response": [
 								{
