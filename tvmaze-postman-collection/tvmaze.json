@@ -547,29 +547,7 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": {
-											"raw": "{{mock_uri}}/shows/:id/episodesbydate?date=2013-07-01",
-											"host": [
-												"{{mock_uri}}"
-											],
-											"path": [
-												"shows",
-												":id",
-												"episodesbydate"
-											],
-											"query": [
-												{
-													"key": "date",
-													"value": "2013-07-01"
-												}
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "1"
-												}
-											]
-										}
+										"url": "{{mock_uri}}/shows/1/seasons"
 									},
 									"_postman_previewlanguage": null,
 									"header": null,
