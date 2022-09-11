@@ -123,48 +123,6 @@
 					},
 					"response": [
 						{
-							"id": "b8a6ffbc-2767-4b53-9cb6-85f57cd122c9",
-							"name": "error-503",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-mock-match-request-name",
-										"value": "",
-										"type": "text",
-										"disabled": true
-									}
-								],
-								"url": {
-									"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-503",
-									"protocol": "https",
-									"host": [
-										"3d26c040-9089-4a24-8b67-4c638255e473",
-										"mock",
-										"pstmn",
-										"io"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "mind-hunter-503"
-										}
-									]
-								}
-							},
-							"status": "Service Unavailable",
-							"code": 503,
-							"_postman_previewlanguage": "json",
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q FROM postman\",\n    \"code\": 0,\n    \"status\": 503\n}"
-						},
-						{
 							"id": "7de6a3c3-d8d4-4bb7-8848-609fc7543c00",
 							"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_200",
 							"originalRequest": {
