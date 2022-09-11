@@ -565,7 +565,7 @@
 					"name": "ShowsByIndex",
 					"item": [
 						{
-							"name": "AllShows",
+							"name": "ShowsPagesList",
 							"id": "c9470d0c-1772-42d1-b295-7977c930c73e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
