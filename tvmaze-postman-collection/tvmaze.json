@@ -97,11 +97,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{mock_uri}}search/shows?q=mind-hunter",
+							"raw": "{{mock_uri}}/search/shows?q=mind-hunter",
 							"host": [
-								"{{mock_uri}}search"
+								"{{mock_uri}}"
 							],
 							"path": [
+								"search",
 								"shows"
 							],
 							"query": [
