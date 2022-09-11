@@ -565,7 +565,7 @@
 					"name": "ShowsByIndex",
 					"item": [
 						{
-							"name": "EpisodeByNumber Copy",
+							"name": "AllShows",
 							"id": "90c9560b-950a-40f2-8d9d-9bb83836edab",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
