@@ -538,7 +538,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "{{tv_maze}}/shows/1/seasons"
 							},
 							"response": [
 								{
