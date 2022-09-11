@@ -453,7 +453,7 @@
 							]
 						},
 						{
-							"name": "ShowsSearch",
+							"name": "EpisodesByDate",
 							"id": "8a078a33-d43e-437a-86f8-862356a2e0aa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
