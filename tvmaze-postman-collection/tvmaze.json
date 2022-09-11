@@ -97,7 +97,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?qs=arrow",
+							"raw": "https://api.tvmaze.com/search/shows?q=arrow",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -115,7 +115,7 @@
 									"disabled": true
 								},
 								{
-									"key": "qs",
+									"key": "q",
 									"value": "arrow"
 								}
 							]
