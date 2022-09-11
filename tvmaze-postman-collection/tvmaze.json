@@ -573,7 +573,21 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{tv_maze}}/shows"
+								"url": {
+									"raw": "{{tv_maze}}/shows?page=1",
+									"host": [
+										"{{tv_maze}}"
+									],
+									"path": [
+										"shows"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
 							},
 							"response": [
 								{
