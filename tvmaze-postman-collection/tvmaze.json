@@ -94,10 +94,10 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://api.tvmaze.com/search/shows?q=arrow",
+							"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -106,7 +106,7 @@
 							],
 							"path": [
 								"search",
-								"shows"
+								"shows1"
 							],
 							"query": [
 								{
