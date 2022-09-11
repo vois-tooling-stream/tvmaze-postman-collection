@@ -372,251 +372,97 @@
 			"item": [
 				{
 					"name": "ShowsById",
-					"item": [],
-					"id": "6106c931-ae30-41c1-8499-eb71284d0b2a"
-				},
-				{
-					"name": "SingleSearch",
-					"id": "667344f8-5776-418c-a700-8544a82b8ffc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": [
+					"item": [
 						{
-							"id": "95397c1c-1c53-44c0-955d-8216dd989f37",
-							"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episode",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"singlesearch",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "mind-hunter"
-										},
-										{
-											"key": "embed",
-											"value": "episode"
-										}
-									]
-								}
+							"name": "EpisodeByNumber",
+							"id": "667344f8-5776-418c-a700-8544a82b8ffc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						},
-						{
-							"id": "6e3a4167-448e-4971-a107-02f85e2c31ff",
-							"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
-							"originalRequest": {
+							"request": {
 								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episodes",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"singlesearch",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "mind-hunter"
-										},
-										{
-											"key": "embed",
-											"value": "episodes"
-										}
-									]
-								}
+								"header": []
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						}
-					]
-				},
-				{
-					"name": "ShowsSearch",
-					"id": "8a078a33-d43e-437a-86f8-862356a2e0aa",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
-							"protocol": "https",
-							"host": [
-								"api",
-								"tvmaze",
-								"com"
-							],
-							"path": [
-								"search",
-								"shows1"
-							],
-							"query": [
+							"response": [
 								{
-									"key": "q",
-									"value": "",
-									"disabled": true
+									"id": "95397c1c-1c53-44c0-955d-8216dd989f37",
+									"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episode",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"singlesearch",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "mind-hunter"
+												},
+												{
+													"key": "embed",
+													"value": "episode"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								},
 								{
-									"key": "q",
-									"value": "arrow"
+									"id": "6e3a4167-448e-4971-a107-02f85e2c31ff",
+									"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episodes",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"singlesearch",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "mind-hunter"
+												},
+												{
+													"key": "embed",
+													"value": "episodes"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
-						}
-					},
-					"response": [
-						{
-							"id": "b05d9dda-c843-4279-b430-8c74e9fd4b74",
-							"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/search/shows?q=12312312312321",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "12312312312321"
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "[]"
 						},
 						{
-							"id": "1cb288ef-0cd3-4103-ac31-4f9f6e5cba1c",
-							"name": "TVSearch_SearchShows_GetShowsList_200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/search/shows?q=mind-hunter",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "mind-hunter"
-										}
-									]
-								}
+							"name": "ShowsSearch",
+							"id": "8a078a33-d43e-437a-86f8-862356a2e0aa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "[\r\n    {\r\n        \"score\": 0.5204634,\r\n        \"show\": {\r\n            \"id\": 10822,\r\n            \"url\": \"https://www.tvmaze.com/shows/10822/mindhunter\",\r\n            \"name\": \"MINDHUNTER\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Crime\",\r\n                \"Thriller\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": null,\r\n            \"averageRuntime\": 54,\r\n            \"premiered\": \"2017-10-13\",\r\n            \"ended\": \"2019-08-16\",\r\n            \"officialSite\": \"https://www.netflix.com/title/80114855\",\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": []\r\n            },\r\n            \"rating\": {\r\n                \"average\": 8.4\r\n            },\r\n            \"weight\": 97,\r\n            \"network\": null,\r\n            \"webChannel\": {\r\n                \"id\": 1,\r\n                \"name\": \"Netflix\",\r\n                \"country\": null,\r\n                \"officialSite\": \"https://www.netflix.com/\"\r\n            },\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 328708,\r\n                \"imdb\": \"tt5290382\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/207/518594.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/207/518594.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>MINDHUNTER</b> is based on the 1996 book<i> Mind Hunter: Inside the FBI's Elite Serial Crime Unit</i>, by former special agent John Douglas and Mark Olshaker. For years, Douglas pursued some of the most notorious serial killers and rapists, developing profiling techniques to catch them. The book goes behind the scenes of some of his highest-profile cases, including the man who hunted prostitutes in Alaska, the Atlanta child murderer, and Seattle's Green River killer. To hone in his profiling methods Douglas interviewed and studied a skew of serial killers. Several book and TV characters have been based in part on him, including Jack Crawford in Thomas Harris' <i>The Silence of the Lambs</i>, Will Graham on <i>Hannibal</i> and Jason Gideon on <i>Criminal Minds</i>.</p>\",\r\n            \"updated\": 1643096917,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/10822\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1697718\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.3376205,\r\n        \"show\": {\r\n            \"id\": 62005,\r\n            \"url\": \"https://www.tvmaze.com/shows/62005/the-first-mindhunter\",\r\n            \"name\": \"The First Mindhunter\",\r\n            \"type\": \"Documentary\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Crime\"\r\n            ],\r\n            \"status\": \"In Development\",\r\n            \"runtime\": null,\r\n            \"averageRuntime\": null,\r\n            \"premiered\": null,\r\n            \"ended\": null,\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": []\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 38,\r\n            \"network\": {\r\n                \"id\": 79,\r\n                \"name\": \"Oxygen\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": null\r\n            },\r\n            \"image\": null,\r\n            \"summary\": \"<p>This unique event series unboxes the lost life's work of the enigmatic Dr. Carlisle and his hundreds of hours of never-before-heard recorded interviews with the likes of Ted Bundy, Arthur Gary Bishop, Hi-Fi Killers and Manny Cortez. Each episode will zero in on the twisted thoughts of a killer and the chilling insights Dr. Carlisle pulled from their minds. Dr. Carlisle's inner circle will work with detectives, using his recordings and research to bring to light new clues in these notorious cases.</p>\",\r\n            \"updated\": 1652232127,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/62005\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n]"
-						},
-						{
-							"id": "b0a469ee-347c-41ef-859d-00d1e7924b43",
-							"name": "TVSearch_SearchShows_GetShowsListWithTwoQueryParameters_200",
-							"originalRequest": {
-								"method": "GET",
+							"request": {
+								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{mock_uri}}/search/shows?q=mind-hunter&q=arrow",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "mind-hunter"
-										},
-										{
-											"key": "q",
-											"value": "arrow"
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "[\r\n    {\r\n        \"score\": 0.90937215,\r\n        \"show\": {\r\n            \"id\": 4,\r\n            \"url\": \"https://www.tvmaze.com/shows/4/arrow\",\r\n            \"name\": \"Arrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Action\",\r\n                \"Science-Fiction\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 60,\r\n            \"averageRuntime\": 60,\r\n            \"premiered\": \"2012-10-10\",\r\n            \"ended\": \"2020-01-28\",\r\n            \"officialSite\": \"http://www.cwtv.com/shows/arrow\",\r\n            \"schedule\": {\r\n                \"time\": \"21:00\",\r\n                \"days\": [\r\n                    \"Tuesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 7.4\r\n            },\r\n            \"weight\": 98,\r\n            \"network\": {\r\n                \"id\": 5,\r\n                \"name\": \"The CW\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://www.cwtv.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": 30715,\r\n                \"thetvdb\": 257655,\r\n                \"imdb\": \"tt2193021\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/213/534017.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/213/534017.jpg\"\r\n            },\r\n            \"summary\": \"<p>After a violent shipwreck, billionaire playboy Oliver Queen was missing and presumed dead for five years before being discovered alive on a remote island in the Pacific. He returned home to Starling City, welcomed by his devoted mother Moira, beloved sister Thea and former flame Laurel Lance. With the aid of his trusted chauffeur/bodyguard John Diggle, the computer-hacking skills of Felicity Smoak and the occasional, reluctant assistance of former police detective, now beat cop, Quentin Lance, Oliver has been waging a one-man war on crime.</p>\",\r\n            \"updated\": 1652385053,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/4\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1744752\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.6775184,\r\n        \"show\": {\r\n            \"id\": 22145,\r\n            \"url\": \"https://www.tvmaze.com/shows/22145/broken-arrow\",\r\n            \"name\": \"Broken Arrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Western\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 30,\r\n            \"averageRuntime\": 30,\r\n            \"premiered\": \"1956-09-25\",\r\n            \"ended\": \"1958-06-24\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": [\r\n                    \"Tuesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 57,\r\n            \"network\": {\r\n                \"id\": 3,\r\n                \"name\": \"ABC\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://abc.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 70767,\r\n                \"imdb\": \"tt0048848\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/80/202355.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/80/202355.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Broken Arrow </b>is a fictionalized account of the historical relationship between Indian agent Tom Jeffords and the Chiricahua Apache chief Cochise.</p>\",\r\n            \"updated\": 1661452196,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/22145\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/965017\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.6570866,\r\n        \"show\": {\r\n            \"id\": 52375,\r\n            \"url\": \"https://www.tvmaze.com/shows/52375/back-arrow\",\r\n            \"name\": \"Back Arrow\",\r\n            \"type\": \"Animation\",\r\n            \"language\": \"Japanese\",\r\n            \"genres\": [\r\n                \"Action\",\r\n                \"Adventure\",\r\n                \"Anime\",\r\n                \"Fantasy\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 25,\r\n            \"averageRuntime\": 25,\r\n            \"premiered\": \"2021-01-09\",\r\n            \"ended\": \"2021-06-19\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": [\r\n                    \"Saturday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 39,\r\n            \"network\": {\r\n                \"id\": 132,\r\n                \"name\": \"Tokyo MX\",\r\n                \"country\": {\r\n                    \"name\": \"Japan\",\r\n                    \"code\": \"JP\",\r\n                    \"timezone\": \"Asia/Tokyo\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 391465,\r\n                \"imdb\": \"tt13405062\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/288/721133.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/288/721133.jpg\"\r\n            },\r\n            \"summary\": \"<p>Ringarindo is a land surrounded by a wall. The wall covers, protects, cultivates, and nutures this land. The wall is god ... it is the foundation of this land of Ringarindo. One day, a mysterious man named Back Arrow appears in Essha village on the outskirts of Ringarindo. Arrow lost his memories, but says that all he knows is, \\\"I came from beyond the wall.\\\" To restore his memories, Arrow heads out beyond the wall, but is embroiled in a battle with himself as the stakes.</p>\",\r\n            \"updated\": 1630756571,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/52375\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/2006221\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.64330924,\r\n        \"show\": {\r\n            \"id\": 47900,\r\n            \"url\": \"https://www.tvmaze.com/shows/47900/green-arrow\",\r\n            \"name\": \"Green Arrow\",\r\n            \"type\": \"Animation\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Science-Fiction\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 5,\r\n            \"averageRuntime\": 5,\r\n            \"premiered\": \"2014-04-16\",\r\n            \"ended\": \"2014-07-20\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"10:00\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 31,\r\n            \"network\": {\r\n                \"id\": 11,\r\n                \"name\": \"Cartoon Network\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": \"tt3673346\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/255/639368.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/255/639368.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Green Arrow</b> is a series of shorts airing as part of Cartoon Network's DC Nation block.</p>\",\r\n            \"updated\": 1650586014,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/47900\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1860776\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.6361004,\r\n        \"show\": {\r\n            \"id\": 11783,\r\n            \"url\": \"https://www.tvmaze.com/shows/11783/arrow-affliction\",\r\n            \"name\": \"Arrow Affliction\",\r\n            \"type\": \"Reality\",\r\n            \"language\": \"English\",\r\n            \"genres\": [],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 30,\r\n            \"averageRuntime\": 30,\r\n            \"premiered\": \"2008-09-29\",\r\n            \"ended\": \"2016-01-22\",\r\n            \"officialSite\": \"http://www.thesportsmanchannel.com/shows/arrow-affliction/\",\r\n            \"schedule\": {\r\n                \"time\": \"22:30\",\r\n                \"days\": [\r\n                    \"Friday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 26,\r\n            \"network\": {\r\n                \"id\": 217,\r\n                \"name\": \"Sportsman Channel\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": null\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/402/1007048.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/402/1007048.jpg\"\r\n            },\r\n            \"summary\": \"<p>Chris Brackett has an affliction, an incurable yearn for all things archery – an <b>Arrow Affliction</b>. One of the hottest young talents in the outdoor industry, Brackett brings an unprecedented skill level and an infectious enthusiasm to the range and the field as he pushes the limits of what can be hit with an arrow in his training sessions, and then applies those lessons to the pursuit of a wide variety of game.</p><p>Arrow Affliction blows the doors off conventional bowhunting television as Brackett fires thousands of arrows into targets such as aspirin, clay pigeons, ping-pong balls, pheasants, bullfrogs, trophy pronghorns and much more. Hold onto your seat as this amazing archer combines the highest levels of marksmanship and showmanship in Chris Brackett's Arrow Affliction Presented by Mossy Oak.</p>\",\r\n            \"updated\": 1649020557,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/11783\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/572593\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.63056684,\r\n        \"show\": {\r\n            \"id\": 6617,\r\n            \"url\": \"https://www.tvmaze.com/shows/6617/red-arrow\",\r\n            \"name\": \"Red Arrow\",\r\n            \"type\": \"Reality\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Action\",\r\n                \"Adventure\",\r\n                \"Nature\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 30,\r\n            \"averageRuntime\": 30,\r\n            \"premiered\": \"2009-06-28\",\r\n            \"ended\": \"2017-08-15\",\r\n            \"officialSite\": \"http://outdoorchannel.com/red-arrow\",\r\n            \"schedule\": {\r\n                \"time\": \"09:30\",\r\n                \"days\": [\r\n                    \"Tuesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 24,\r\n            \"network\": {\r\n                \"id\": 207,\r\n                \"name\": \"Outdoor Channel\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": null\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/32/81358.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/32/81358.jpg\"\r\n            },\r\n            \"summary\": \"<p>In this season of <b>Red Arrow</b>, Kip again delivers the shooting and archery skills, along with his brand of comedy, that viewers have come to expect! Red Arrow continues to be a show that exemplifies how much hunting is part of our culture that it is rooted deep in this great country of ours, and is centered around God and family. Red Arrow's southern roots have this same foundation, and this show is as real as it gets! The show is mainly bow hunting with the occasional firearm hunt thrown in the mix. Join Kip for his very best whitetail season to date, killing more and bigger whitetail than ever before, and have some fun while you're at it!</p>\",\r\n            \"updated\": 1628510257,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/6617\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1270053\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.60392046,\r\n        \"show\": {\r\n            \"id\": 18507,\r\n            \"url\": \"https://www.tvmaze.com/shows/18507/arrow-blood-rush\",\r\n            \"name\": \"Arrow: Blood Rush\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Action\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 1,\r\n            \"averageRuntime\": 1,\r\n            \"premiered\": \"2013-11-06\",\r\n            \"ended\": \"2013-12-11\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"20:00\",\r\n                \"days\": [\r\n                    \"Wednesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 6\r\n            },\r\n            \"weight\": 85,\r\n            \"network\": {\r\n                \"id\": 5,\r\n                \"name\": \"The CW\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://www.cwtv.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": \"tt3348258\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/63/157986.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/63/157986.jpg\"\r\n            },\r\n            \"summary\": \"<p>Felicity meets Roy and has a special mission for him.</p>\",\r\n            \"updated\": 1476032656,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/18507\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/841639\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.48541507,\r\n        \"show\": {\r\n            \"id\": 30416,\r\n            \"url\": \"https://www.tvmaze.com/shows/30416/harrow\",\r\n            \"name\": \"Harrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Crime\",\r\n                \"Medical\"\r\n            ],\r\n            \"status\": \"To Be Determined\",\r\n            \"runtime\": 60,\r\n            \"averageRuntime\": 57,\r\n            \"premiered\": \"2018-03-09\",\r\n            \"ended\": null,\r\n            \"officialSite\": \"https://iview.abc.net.au/show/harrow/\",\r\n            \"schedule\": {\r\n                \"time\": \"20:30\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 7.6\r\n            },\r\n            \"weight\": 98,\r\n            \"network\": {\r\n                \"id\": 114,\r\n                \"name\": \"ABC\",\r\n                \"country\": {\r\n                    \"name\": \"Australia\",\r\n                    \"code\": \"AU\",\r\n                    \"timezone\": \"Australia/Sydney\"\r\n                },\r\n                \"officialSite\": \"https://www.abc.net.au/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 342568,\r\n                \"imdb\": \"tt7242816\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/298/745783.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/298/745783.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Harrow</b> tells the story of Dr. Daniel Harrow, who is no ordinary forensic pathologist. Brilliant. Unorthodox. And a murderer? Harrow's total disregard for authority and his unfailing empathy for the dead help him solve even the most bizarre of cases. He is driven to give victims a voice and will bend every rule to get to the truth of what happened to them. But when a terrible secret from his past threatens his family, his career and himself, Harrow needs all his wit, wile and forensic genius not to solve a crime but to keep it buried.</p>\",\r\n            \"updated\": 1657628430,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/30416\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/2058616\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.35774377,\r\n        \"show\": {\r\n            \"id\": 35649,\r\n            \"url\": \"https://www.tvmaze.com/shows/35649/darrow-darrow\",\r\n            \"name\": \"Darrow & Darrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Mystery\",\r\n                \"Legal\"\r\n            ],\r\n            \"status\": \"To Be Determined\",\r\n            \"runtime\": 120,\r\n            \"averageRuntime\": 120,\r\n            \"premiered\": \"2017-10-22\",\r\n            \"ended\": null,\r\n            \"officialSite\": \"http://www.hallmarkmoviesandmysteries.com/darrow-darrow\",\r\n            \"schedule\": {\r\n                \"time\": \"21:00\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 7.8\r\n            },\r\n            \"weight\": 88,\r\n            \"network\": {\r\n                \"id\": 252,\r\n                \"name\": \"Hallmark Movies & Mysteries\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 345641,\r\n                \"imdb\": \"tt6931984\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/150/377088.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/150/377088.jpg\"\r\n            },\r\n            \"summary\": \"<p>Claire Darrow, a lawyer, fights for what's right, regardless of whether it makes her a dime. Joanna, Claire's estranged mother and a lawyer as well, would rather make a profit. They clash on nearly everything, even on the best way to raise Claire's daughter, Louise.</p>\",\r\n            \"updated\": 1608757694,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/35649\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1704309\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.3546512,\r\n        \"show\": {\r\n            \"id\": 53320,\r\n            \"url\": \"https://www.tvmaze.com/shows/53320/allen-v-farrow\",\r\n            \"name\": \"Allen v. Farrow\",\r\n            \"type\": \"Documentary\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Crime\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 60,\r\n            \"averageRuntime\": 64,\r\n            \"premiered\": \"2021-02-21\",\r\n            \"ended\": \"2021-03-14\",\r\n            \"officialSite\": \"https://www.hbo.com/documentaries/allen-v-farrow\",\r\n            \"schedule\": {\r\n                \"time\": \"21:00\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 5.6\r\n            },\r\n            \"weight\": 47,\r\n            \"network\": {\r\n                \"id\": 8,\r\n                \"name\": \"HBO\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://www.hbo.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 396365,\r\n                \"imdb\": \"tt13990468\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/297/743496.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/297/743496.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Allen v. Farrow </b>goes behind decades of sensational headlines to reveal the private story of one of Hollywood's most notorious and public scandals: the accusation of sexual abuse against Woody Allen involving Dylan, his then seven-year-old daughter with Mia Farrow; their subsequent custody trial, the revelation of Allen's relationship with Farrow's daughter, Soon-Yi; and the controversial aftermath in the years that followed. Once celebrated for their on and off-screen partnership, Farrow and Allen's lives were irrevocably fractured and their sprawling family torn apart with the public disclosure of the abuse allegations and the vitriolic disputes that followed.</p>\",\r\n            \"updated\": 1654457303,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/53320\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/2036236\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n]"
-						},
-						{
-							"id": "254c19dc-0c80-4fab-a5e1-b5ed964d6297",
-							"name": "TVSearch_SearchShows_GetEmptyShowsListWithEmptyQuery_200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/search/shows?q=",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": ""
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "[]"
-						},
-						{
-							"id": "24022e58-577a-46f4-b6d4-5fba62fb9233",
-							"name": "TVSearch_SearchShows_MissingQueryParameter_400",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://api.tvmaze.com/search/shows",
+									"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -625,111 +471,266 @@
 									],
 									"path": [
 										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "arrow",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\r\n    \"name\": \"Bad Request\",\r\n    \"message\": \"Missing required parameters: q\",\r\n    \"code\": 0,\r\n    \"status\": 400\r\n}"
-						},
-						{
-							"id": "be96b260-7bff-40fe-a0ec-cf7d06a54cd2",
-							"name": "TVSearch_SearchShows_InvalidQueryParameterKey_400",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/search/shows?qs=arrow",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "qs",
-											"value": "arrow"
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\r\n    \"name\": \"Bad Request\",\r\n    \"message\": \"Missing required parameters: q\",\r\n    \"code\": 0,\r\n    \"status\": 400\r\n}"
-						},
-						{
-							"id": "cf9db679-de7a-483e-8e95-fe64d925839d",
-							"name": "TVSearch_SearchShows_MethodNotAllowed_405",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/search/shows?q=arrow",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "arrow"
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\r\n    \"name\": \"Method Not Allowed\",\r\n    \"message\": \"Method Not Allowed. This URL can only handle the following request methods: GET, HEAD.\",\r\n    \"code\": 0,\r\n    \"status\": 405\r\n}"
-						},
-						{
-							"id": "e39ef42f-ad25-4b48-992a-5101487143b4",
-							"name": "TVSearch_SearchShows_InvalidPathParameter_404",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{mock_uri}}/search/shows1?q=arrow",
-									"host": [
-										"{{mock_uri}}"
-									],
-									"path": [
-										"search",
 										"shows1"
 									],
 									"query": [
 										{
 											"key": "q",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "q",
 											"value": "arrow"
 										}
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\r\n    \"name\": \"Not Found\",\r\n    \"message\": \"Page not found.\",\r\n    \"code\": 0,\r\n    \"status\": 404,\r\n    \"previous\": {\r\n        \"name\": \"Invalid Route\",\r\n        \"message\": \"Unable to resolve the request: search/shows1\",\r\n        \"code\": 0\r\n    }\r\n}"
+							"response": [
+								{
+									"id": "b05d9dda-c843-4279-b430-8c74e9fd4b74",
+									"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/search/shows?q=12312312312321",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"search",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "12312312312321"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "[]"
+								},
+								{
+									"id": "1cb288ef-0cd3-4103-ac31-4f9f6e5cba1c",
+									"name": "TVSearch_SearchShows_GetShowsList_200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/search/shows?q=mind-hunter",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"search",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "mind-hunter"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\r\n    {\r\n        \"score\": 0.5204634,\r\n        \"show\": {\r\n            \"id\": 10822,\r\n            \"url\": \"https://www.tvmaze.com/shows/10822/mindhunter\",\r\n            \"name\": \"MINDHUNTER\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Crime\",\r\n                \"Thriller\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": null,\r\n            \"averageRuntime\": 54,\r\n            \"premiered\": \"2017-10-13\",\r\n            \"ended\": \"2019-08-16\",\r\n            \"officialSite\": \"https://www.netflix.com/title/80114855\",\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": []\r\n            },\r\n            \"rating\": {\r\n                \"average\": 8.4\r\n            },\r\n            \"weight\": 97,\r\n            \"network\": null,\r\n            \"webChannel\": {\r\n                \"id\": 1,\r\n                \"name\": \"Netflix\",\r\n                \"country\": null,\r\n                \"officialSite\": \"https://www.netflix.com/\"\r\n            },\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 328708,\r\n                \"imdb\": \"tt5290382\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/207/518594.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/207/518594.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>MINDHUNTER</b> is based on the 1996 book<i> Mind Hunter: Inside the FBI's Elite Serial Crime Unit</i>, by former special agent John Douglas and Mark Olshaker. For years, Douglas pursued some of the most notorious serial killers and rapists, developing profiling techniques to catch them. The book goes behind the scenes of some of his highest-profile cases, including the man who hunted prostitutes in Alaska, the Atlanta child murderer, and Seattle's Green River killer. To hone in his profiling methods Douglas interviewed and studied a skew of serial killers. Several book and TV characters have been based in part on him, including Jack Crawford in Thomas Harris' <i>The Silence of the Lambs</i>, Will Graham on <i>Hannibal</i> and Jason Gideon on <i>Criminal Minds</i>.</p>\",\r\n            \"updated\": 1643096917,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/10822\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1697718\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.3376205,\r\n        \"show\": {\r\n            \"id\": 62005,\r\n            \"url\": \"https://www.tvmaze.com/shows/62005/the-first-mindhunter\",\r\n            \"name\": \"The First Mindhunter\",\r\n            \"type\": \"Documentary\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Crime\"\r\n            ],\r\n            \"status\": \"In Development\",\r\n            \"runtime\": null,\r\n            \"averageRuntime\": null,\r\n            \"premiered\": null,\r\n            \"ended\": null,\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": []\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 38,\r\n            \"network\": {\r\n                \"id\": 79,\r\n                \"name\": \"Oxygen\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": null\r\n            },\r\n            \"image\": null,\r\n            \"summary\": \"<p>This unique event series unboxes the lost life's work of the enigmatic Dr. Carlisle and his hundreds of hours of never-before-heard recorded interviews with the likes of Ted Bundy, Arthur Gary Bishop, Hi-Fi Killers and Manny Cortez. Each episode will zero in on the twisted thoughts of a killer and the chilling insights Dr. Carlisle pulled from their minds. Dr. Carlisle's inner circle will work with detectives, using his recordings and research to bring to light new clues in these notorious cases.</p>\",\r\n            \"updated\": 1652232127,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/62005\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n]"
+								},
+								{
+									"id": "b0a469ee-347c-41ef-859d-00d1e7924b43",
+									"name": "TVSearch_SearchShows_GetShowsListWithTwoQueryParameters_200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/search/shows?q=mind-hunter&q=arrow",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"search",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "mind-hunter"
+												},
+												{
+													"key": "q",
+													"value": "arrow"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\r\n    {\r\n        \"score\": 0.90937215,\r\n        \"show\": {\r\n            \"id\": 4,\r\n            \"url\": \"https://www.tvmaze.com/shows/4/arrow\",\r\n            \"name\": \"Arrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Action\",\r\n                \"Science-Fiction\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 60,\r\n            \"averageRuntime\": 60,\r\n            \"premiered\": \"2012-10-10\",\r\n            \"ended\": \"2020-01-28\",\r\n            \"officialSite\": \"http://www.cwtv.com/shows/arrow\",\r\n            \"schedule\": {\r\n                \"time\": \"21:00\",\r\n                \"days\": [\r\n                    \"Tuesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 7.4\r\n            },\r\n            \"weight\": 98,\r\n            \"network\": {\r\n                \"id\": 5,\r\n                \"name\": \"The CW\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://www.cwtv.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": 30715,\r\n                \"thetvdb\": 257655,\r\n                \"imdb\": \"tt2193021\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/213/534017.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/213/534017.jpg\"\r\n            },\r\n            \"summary\": \"<p>After a violent shipwreck, billionaire playboy Oliver Queen was missing and presumed dead for five years before being discovered alive on a remote island in the Pacific. He returned home to Starling City, welcomed by his devoted mother Moira, beloved sister Thea and former flame Laurel Lance. With the aid of his trusted chauffeur/bodyguard John Diggle, the computer-hacking skills of Felicity Smoak and the occasional, reluctant assistance of former police detective, now beat cop, Quentin Lance, Oliver has been waging a one-man war on crime.</p>\",\r\n            \"updated\": 1652385053,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/4\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1744752\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.6775184,\r\n        \"show\": {\r\n            \"id\": 22145,\r\n            \"url\": \"https://www.tvmaze.com/shows/22145/broken-arrow\",\r\n            \"name\": \"Broken Arrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Western\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 30,\r\n            \"averageRuntime\": 30,\r\n            \"premiered\": \"1956-09-25\",\r\n            \"ended\": \"1958-06-24\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": [\r\n                    \"Tuesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 57,\r\n            \"network\": {\r\n                \"id\": 3,\r\n                \"name\": \"ABC\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://abc.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 70767,\r\n                \"imdb\": \"tt0048848\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/80/202355.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/80/202355.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Broken Arrow </b>is a fictionalized account of the historical relationship between Indian agent Tom Jeffords and the Chiricahua Apache chief Cochise.</p>\",\r\n            \"updated\": 1661452196,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/22145\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/965017\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.6570866,\r\n        \"show\": {\r\n            \"id\": 52375,\r\n            \"url\": \"https://www.tvmaze.com/shows/52375/back-arrow\",\r\n            \"name\": \"Back Arrow\",\r\n            \"type\": \"Animation\",\r\n            \"language\": \"Japanese\",\r\n            \"genres\": [\r\n                \"Action\",\r\n                \"Adventure\",\r\n                \"Anime\",\r\n                \"Fantasy\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 25,\r\n            \"averageRuntime\": 25,\r\n            \"premiered\": \"2021-01-09\",\r\n            \"ended\": \"2021-06-19\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"\",\r\n                \"days\": [\r\n                    \"Saturday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 39,\r\n            \"network\": {\r\n                \"id\": 132,\r\n                \"name\": \"Tokyo MX\",\r\n                \"country\": {\r\n                    \"name\": \"Japan\",\r\n                    \"code\": \"JP\",\r\n                    \"timezone\": \"Asia/Tokyo\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 391465,\r\n                \"imdb\": \"tt13405062\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/288/721133.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/288/721133.jpg\"\r\n            },\r\n            \"summary\": \"<p>Ringarindo is a land surrounded by a wall. The wall covers, protects, cultivates, and nutures this land. The wall is god ... it is the foundation of this land of Ringarindo. One day, a mysterious man named Back Arrow appears in Essha village on the outskirts of Ringarindo. Arrow lost his memories, but says that all he knows is, \\\"I came from beyond the wall.\\\" To restore his memories, Arrow heads out beyond the wall, but is embroiled in a battle with himself as the stakes.</p>\",\r\n            \"updated\": 1630756571,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/52375\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/2006221\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.64330924,\r\n        \"show\": {\r\n            \"id\": 47900,\r\n            \"url\": \"https://www.tvmaze.com/shows/47900/green-arrow\",\r\n            \"name\": \"Green Arrow\",\r\n            \"type\": \"Animation\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Science-Fiction\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 5,\r\n            \"averageRuntime\": 5,\r\n            \"premiered\": \"2014-04-16\",\r\n            \"ended\": \"2014-07-20\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"10:00\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 31,\r\n            \"network\": {\r\n                \"id\": 11,\r\n                \"name\": \"Cartoon Network\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": \"tt3673346\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/255/639368.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/255/639368.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Green Arrow</b> is a series of shorts airing as part of Cartoon Network's DC Nation block.</p>\",\r\n            \"updated\": 1650586014,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/47900\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1860776\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.6361004,\r\n        \"show\": {\r\n            \"id\": 11783,\r\n            \"url\": \"https://www.tvmaze.com/shows/11783/arrow-affliction\",\r\n            \"name\": \"Arrow Affliction\",\r\n            \"type\": \"Reality\",\r\n            \"language\": \"English\",\r\n            \"genres\": [],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 30,\r\n            \"averageRuntime\": 30,\r\n            \"premiered\": \"2008-09-29\",\r\n            \"ended\": \"2016-01-22\",\r\n            \"officialSite\": \"http://www.thesportsmanchannel.com/shows/arrow-affliction/\",\r\n            \"schedule\": {\r\n                \"time\": \"22:30\",\r\n                \"days\": [\r\n                    \"Friday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 26,\r\n            \"network\": {\r\n                \"id\": 217,\r\n                \"name\": \"Sportsman Channel\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": null\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/402/1007048.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/402/1007048.jpg\"\r\n            },\r\n            \"summary\": \"<p>Chris Brackett has an affliction, an incurable yearn for all things archery – an <b>Arrow Affliction</b>. One of the hottest young talents in the outdoor industry, Brackett brings an unprecedented skill level and an infectious enthusiasm to the range and the field as he pushes the limits of what can be hit with an arrow in his training sessions, and then applies those lessons to the pursuit of a wide variety of game.</p><p>Arrow Affliction blows the doors off conventional bowhunting television as Brackett fires thousands of arrows into targets such as aspirin, clay pigeons, ping-pong balls, pheasants, bullfrogs, trophy pronghorns and much more. Hold onto your seat as this amazing archer combines the highest levels of marksmanship and showmanship in Chris Brackett's Arrow Affliction Presented by Mossy Oak.</p>\",\r\n            \"updated\": 1649020557,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/11783\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/572593\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.63056684,\r\n        \"show\": {\r\n            \"id\": 6617,\r\n            \"url\": \"https://www.tvmaze.com/shows/6617/red-arrow\",\r\n            \"name\": \"Red Arrow\",\r\n            \"type\": \"Reality\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Action\",\r\n                \"Adventure\",\r\n                \"Nature\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 30,\r\n            \"averageRuntime\": 30,\r\n            \"premiered\": \"2009-06-28\",\r\n            \"ended\": \"2017-08-15\",\r\n            \"officialSite\": \"http://outdoorchannel.com/red-arrow\",\r\n            \"schedule\": {\r\n                \"time\": \"09:30\",\r\n                \"days\": [\r\n                    \"Tuesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": null\r\n            },\r\n            \"weight\": 24,\r\n            \"network\": {\r\n                \"id\": 207,\r\n                \"name\": \"Outdoor Channel\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": null\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/32/81358.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/32/81358.jpg\"\r\n            },\r\n            \"summary\": \"<p>In this season of <b>Red Arrow</b>, Kip again delivers the shooting and archery skills, along with his brand of comedy, that viewers have come to expect! Red Arrow continues to be a show that exemplifies how much hunting is part of our culture that it is rooted deep in this great country of ours, and is centered around God and family. Red Arrow's southern roots have this same foundation, and this show is as real as it gets! The show is mainly bow hunting with the occasional firearm hunt thrown in the mix. Join Kip for his very best whitetail season to date, killing more and bigger whitetail than ever before, and have some fun while you're at it!</p>\",\r\n            \"updated\": 1628510257,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/6617\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1270053\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.60392046,\r\n        \"show\": {\r\n            \"id\": 18507,\r\n            \"url\": \"https://www.tvmaze.com/shows/18507/arrow-blood-rush\",\r\n            \"name\": \"Arrow: Blood Rush\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Action\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 1,\r\n            \"averageRuntime\": 1,\r\n            \"premiered\": \"2013-11-06\",\r\n            \"ended\": \"2013-12-11\",\r\n            \"officialSite\": null,\r\n            \"schedule\": {\r\n                \"time\": \"20:00\",\r\n                \"days\": [\r\n                    \"Wednesday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 6\r\n            },\r\n            \"weight\": 85,\r\n            \"network\": {\r\n                \"id\": 5,\r\n                \"name\": \"The CW\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://www.cwtv.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": null,\r\n                \"imdb\": \"tt3348258\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/63/157986.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/63/157986.jpg\"\r\n            },\r\n            \"summary\": \"<p>Felicity meets Roy and has a special mission for him.</p>\",\r\n            \"updated\": 1476032656,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/18507\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/841639\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.48541507,\r\n        \"show\": {\r\n            \"id\": 30416,\r\n            \"url\": \"https://www.tvmaze.com/shows/30416/harrow\",\r\n            \"name\": \"Harrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Crime\",\r\n                \"Medical\"\r\n            ],\r\n            \"status\": \"To Be Determined\",\r\n            \"runtime\": 60,\r\n            \"averageRuntime\": 57,\r\n            \"premiered\": \"2018-03-09\",\r\n            \"ended\": null,\r\n            \"officialSite\": \"https://iview.abc.net.au/show/harrow/\",\r\n            \"schedule\": {\r\n                \"time\": \"20:30\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 7.6\r\n            },\r\n            \"weight\": 98,\r\n            \"network\": {\r\n                \"id\": 114,\r\n                \"name\": \"ABC\",\r\n                \"country\": {\r\n                    \"name\": \"Australia\",\r\n                    \"code\": \"AU\",\r\n                    \"timezone\": \"Australia/Sydney\"\r\n                },\r\n                \"officialSite\": \"https://www.abc.net.au/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 342568,\r\n                \"imdb\": \"tt7242816\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/298/745783.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/298/745783.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Harrow</b> tells the story of Dr. Daniel Harrow, who is no ordinary forensic pathologist. Brilliant. Unorthodox. And a murderer? Harrow's total disregard for authority and his unfailing empathy for the dead help him solve even the most bizarre of cases. He is driven to give victims a voice and will bend every rule to get to the truth of what happened to them. But when a terrible secret from his past threatens his family, his career and himself, Harrow needs all his wit, wile and forensic genius not to solve a crime but to keep it buried.</p>\",\r\n            \"updated\": 1657628430,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/30416\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/2058616\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.35774377,\r\n        \"show\": {\r\n            \"id\": 35649,\r\n            \"url\": \"https://www.tvmaze.com/shows/35649/darrow-darrow\",\r\n            \"name\": \"Darrow & Darrow\",\r\n            \"type\": \"Scripted\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Drama\",\r\n                \"Mystery\",\r\n                \"Legal\"\r\n            ],\r\n            \"status\": \"To Be Determined\",\r\n            \"runtime\": 120,\r\n            \"averageRuntime\": 120,\r\n            \"premiered\": \"2017-10-22\",\r\n            \"ended\": null,\r\n            \"officialSite\": \"http://www.hallmarkmoviesandmysteries.com/darrow-darrow\",\r\n            \"schedule\": {\r\n                \"time\": \"21:00\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 7.8\r\n            },\r\n            \"weight\": 88,\r\n            \"network\": {\r\n                \"id\": 252,\r\n                \"name\": \"Hallmark Movies & Mysteries\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": null\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 345641,\r\n                \"imdb\": \"tt6931984\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/150/377088.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/150/377088.jpg\"\r\n            },\r\n            \"summary\": \"<p>Claire Darrow, a lawyer, fights for what's right, regardless of whether it makes her a dime. Joanna, Claire's estranged mother and a lawyer as well, would rather make a profit. They clash on nearly everything, even on the best way to raise Claire's daughter, Louise.</p>\",\r\n            \"updated\": 1608757694,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/35649\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/1704309\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"score\": 0.3546512,\r\n        \"show\": {\r\n            \"id\": 53320,\r\n            \"url\": \"https://www.tvmaze.com/shows/53320/allen-v-farrow\",\r\n            \"name\": \"Allen v. Farrow\",\r\n            \"type\": \"Documentary\",\r\n            \"language\": \"English\",\r\n            \"genres\": [\r\n                \"Crime\"\r\n            ],\r\n            \"status\": \"Ended\",\r\n            \"runtime\": 60,\r\n            \"averageRuntime\": 64,\r\n            \"premiered\": \"2021-02-21\",\r\n            \"ended\": \"2021-03-14\",\r\n            \"officialSite\": \"https://www.hbo.com/documentaries/allen-v-farrow\",\r\n            \"schedule\": {\r\n                \"time\": \"21:00\",\r\n                \"days\": [\r\n                    \"Sunday\"\r\n                ]\r\n            },\r\n            \"rating\": {\r\n                \"average\": 5.6\r\n            },\r\n            \"weight\": 47,\r\n            \"network\": {\r\n                \"id\": 8,\r\n                \"name\": \"HBO\",\r\n                \"country\": {\r\n                    \"name\": \"United States\",\r\n                    \"code\": \"US\",\r\n                    \"timezone\": \"America/New_York\"\r\n                },\r\n                \"officialSite\": \"https://www.hbo.com/\"\r\n            },\r\n            \"webChannel\": null,\r\n            \"dvdCountry\": null,\r\n            \"externals\": {\r\n                \"tvrage\": null,\r\n                \"thetvdb\": 396365,\r\n                \"imdb\": \"tt13990468\"\r\n            },\r\n            \"image\": {\r\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/297/743496.jpg\",\r\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/297/743496.jpg\"\r\n            },\r\n            \"summary\": \"<p><b>Allen v. Farrow </b>goes behind decades of sensational headlines to reveal the private story of one of Hollywood's most notorious and public scandals: the accusation of sexual abuse against Woody Allen involving Dylan, his then seven-year-old daughter with Mia Farrow; their subsequent custody trial, the revelation of Allen's relationship with Farrow's daughter, Soon-Yi; and the controversial aftermath in the years that followed. Once celebrated for their on and off-screen partnership, Farrow and Allen's lives were irrevocably fractured and their sprawling family torn apart with the public disclosure of the abuse allegations and the vitriolic disputes that followed.</p>\",\r\n            \"updated\": 1654457303,\r\n            \"_links\": {\r\n                \"self\": {\r\n                    \"href\": \"https://api.tvmaze.com/shows/53320\"\r\n                },\r\n                \"previousepisode\": {\r\n                    \"href\": \"https://api.tvmaze.com/episodes/2036236\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n]"
+								},
+								{
+									"id": "254c19dc-0c80-4fab-a5e1-b5ed964d6297",
+									"name": "TVSearch_SearchShows_GetEmptyShowsListWithEmptyQuery_200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/search/shows?q=",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"search",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": ""
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "[]"
+								},
+								{
+									"id": "24022e58-577a-46f4-b6d4-5fba62fb9233",
+									"name": "TVSearch_SearchShows_MissingQueryParameter_400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://api.tvmaze.com/search/shows",
+											"protocol": "https",
+											"host": [
+												"api",
+												"tvmaze",
+												"com"
+											],
+											"path": [
+												"search",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "arrow",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"name\": \"Bad Request\",\r\n    \"message\": \"Missing required parameters: q\",\r\n    \"code\": 0,\r\n    \"status\": 400\r\n}"
+								},
+								{
+									"id": "be96b260-7bff-40fe-a0ec-cf7d06a54cd2",
+									"name": "TVSearch_SearchShows_InvalidQueryParameterKey_400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/search/shows?qs=arrow",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"search",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "qs",
+													"value": "arrow"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"name\": \"Bad Request\",\r\n    \"message\": \"Missing required parameters: q\",\r\n    \"code\": 0,\r\n    \"status\": 400\r\n}"
+								},
+								{
+									"id": "cf9db679-de7a-483e-8e95-fe64d925839d",
+									"name": "TVSearch_SearchShows_MethodNotAllowed_405",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/search/shows?q=arrow",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"search",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "arrow"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"name\": \"Method Not Allowed\",\r\n    \"message\": \"Method Not Allowed. This URL can only handle the following request methods: GET, HEAD.\",\r\n    \"code\": 0,\r\n    \"status\": 405\r\n}"
+								},
+								{
+									"id": "e39ef42f-ad25-4b48-992a-5101487143b4",
+									"name": "TVSearch_SearchShows_InvalidPathParameter_404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/search/shows1?q=arrow",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"search",
+												"shows1"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "arrow"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"name\": \"Not Found\",\r\n    \"message\": \"Page not found.\",\r\n    \"code\": 0,\r\n    \"status\": 404,\r\n    \"previous\": {\r\n        \"name\": \"Invalid Route\",\r\n        \"message\": \"Unable to resolve the request: search/shows1\",\r\n        \"code\": 0\r\n    }\r\n}"
+								}
+							]
 						}
-					]
+					],
+					"id": "6106c931-ae30-41c1-8499-eb71284d0b2a"
 				}
 			],
 			"id": "078223d9-f12b-4fba-90db-b4a817cd3db0"
