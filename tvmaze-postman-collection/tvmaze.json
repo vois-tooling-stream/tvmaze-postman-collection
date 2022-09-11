@@ -371,6 +371,11 @@
 			"name": "TVShows",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "6106c931-ae30-41c1-8499-eb71284d0b2a"
+				},
+				{
 					"name": "SingleSearch",
 					"id": "667344f8-5776-418c-a700-8544a82b8ffc",
 					"protocolProfileBehavior": {
