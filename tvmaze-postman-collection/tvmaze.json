@@ -592,7 +592,7 @@
 							"response": [
 								{
 									"id": "8469db59-6e57-4c6b-9c53-756bef9b12d2",
-									"name": "TVShows_AllShows_AllPages_200",
+									"name": "TVShows_GetShowsByPage_WithValidPageIndex_200",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
