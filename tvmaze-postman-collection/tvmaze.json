@@ -453,6 +453,85 @@
 							]
 						},
 						{
+							"name": "Seasons",
+							"id": "b92b5ca3-c6fa-4b03-89dd-98167bea8468",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": [
+								{
+									"id": "e5e089a3-55a2-4833-b3de-1eff7107041e",
+									"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episode",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"singlesearch",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "mind-hunter"
+												},
+												{
+													"key": "embed",
+													"value": "episode"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "3324990a-bfb3-41f5-8ffe-079cc6318ef2",
+									"name": "TVSearch_SingleSearch_GetShowEpisodes_200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episodes",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"singlesearch",
+												"shows"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "mind-hunter"
+												},
+												{
+													"key": "embed",
+													"value": "episodes"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						},
+						{
 							"name": "EpisodesByDate",
 							"id": "8a078a33-d43e-437a-86f8-862356a2e0aa",
 							"protocolProfileBehavior": {
