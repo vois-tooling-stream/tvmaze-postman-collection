@@ -494,7 +494,7 @@
 							"response": [
 								{
 									"id": "cf522208-3844-446d-8113-ebeb03c7572a",
-									"name": "TVShows_EpisodeByNumber_GetEpisodeWithValidQueryParameters_200 Copy",
+									"name": "TVShows_EpisodeByDate_GetEpisodeWithValidQueryParameters_200",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
