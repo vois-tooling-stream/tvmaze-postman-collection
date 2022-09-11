@@ -413,7 +413,7 @@
 							"response": [
 								{
 									"id": "95397c1c-1c53-44c0-955d-8216dd989f37",
-									"name": "TVSearch_SingleSearch_GetShowEpisodesWithInvalidEmbedQueryParameter_400",
+									"name": "TVShows_EpisodeByNumber_GetEpisodeWithValidQueryParameter_400",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
