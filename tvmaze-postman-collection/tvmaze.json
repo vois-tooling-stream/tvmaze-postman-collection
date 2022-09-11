@@ -399,7 +399,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\r\n    \"name\": \"Bad Request\",\r\n    \"message\": \"Missing required parameters: q\",\r\n    \"code\": 0,\r\n    \"status\": 400\r\n}"
 						},
 						{
 							"id": "475da32b-f28b-42ad-9653-52e4c9e2a61a",
