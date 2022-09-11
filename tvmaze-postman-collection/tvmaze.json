@@ -123,48 +123,6 @@
 					},
 					"response": [
 						{
-							"id": "fe84977a-6670-45ae-9897-24f7dd7e92a4",
-							"name": "error-400",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-mock-match-request-name",
-										"value": "",
-										"type": "text",
-										"disabled": true
-									}
-								],
-								"url": {
-									"raw": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/search/shows?q=mind-hunter-400",
-									"protocol": "https",
-									"host": [
-										"3d26c040-9089-4a24-8b67-4c638255e473",
-										"mock",
-										"pstmn",
-										"io"
-									],
-									"path": [
-										"search",
-										"shows"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "mind-hunter-400"
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"name\": \"Bad Request change omar test\",\n    \"message\": \"Missing required parameters: q FROM postman test\",\n    \"code\": 0,\n    \"status\": 400\n}"
-						},
-						{
 							"id": "e57b0ee7-d20b-472e-9edc-d57404095214",
 							"name": "error-500",
 							"originalRequest": {
