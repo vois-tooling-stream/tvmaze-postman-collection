@@ -418,22 +418,29 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episode",
+											"raw": "{{mock_uri}}/shows/:id/episodebynumber?season=1&number=1",
 											"host": [
 												"{{mock_uri}}"
 											],
 											"path": [
-												"singlesearch",
-												"shows"
+												"shows",
+												":id",
+												"episodebynumber"
 											],
 											"query": [
 												{
-													"key": "q",
-													"value": "mind-hunter"
+													"key": "season",
+													"value": "1"
 												},
 												{
-													"key": "embed",
-													"value": "episode"
+													"key": "number",
+													"value": "1"
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": null
 												}
 											]
 										}
