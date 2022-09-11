@@ -463,26 +463,30 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
-									"protocol": "https",
+									"raw": "{{tv_maze}}/shows/:id/episodesbydate?date=2013-07-01",
 									"host": [
-										"api",
-										"tvmaze",
-										"com"
+										"{{tv_maze}}"
 									],
 									"path": [
-										"search",
-										"shows1"
+										"shows",
+										":id",
+										"episodesbydate"
 									],
 									"query": [
+										{
+											"key": "date",
+											"value": "2013-07-01"
+										},
 										{
 											"key": "q",
 											"value": "",
 											"disabled": true
-										},
+										}
+									],
+									"variable": [
 										{
-											"key": "q",
-											"value": "arrow"
+											"key": "id",
+											"value": null
 										}
 									]
 								}
