@@ -495,19 +495,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{mock_uri}}/shows/1/episodesbydate?date=2013-07-01",
+											"raw": "{{mock_uri}}/shows/:id/episodesbydate?date=2013-07-01",
 											"host": [
 												"{{mock_uri}}"
 											],
 											"path": [
 												"shows",
-												"1",
+												":id",
 												"episodesbydate"
 											],
 											"query": [
 												{
 													"key": "date",
 													"value": "2013-07-01"
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1"
 												}
 											]
 										}
