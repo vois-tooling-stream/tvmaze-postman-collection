@@ -582,33 +582,7 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": {
-											"raw": "{{mock_uri}}/shows/:id/episodebynumber?season=1&number=1",
-											"host": [
-												"{{mock_uri}}"
-											],
-											"path": [
-												"shows",
-												":id",
-												"episodebynumber"
-											],
-											"query": [
-												{
-													"key": "season",
-													"value": "1"
-												},
-												{
-													"key": "number",
-													"value": "1"
-												}
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "1"
-												}
-											]
-										}
+										"url": "{{mock_uri}}/shows"
 									},
 									"_postman_previewlanguage": null,
 									"header": null,
