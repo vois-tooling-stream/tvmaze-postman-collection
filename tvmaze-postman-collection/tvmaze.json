@@ -679,5 +679,30 @@
 			],
 			"id": "078223d9-f12b-4fba-90db-b4a817cd3db0"
 		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "167dc78c-d0f7-4a6d-9d21-f7fc78c1337e",
+				"type": "text/javascript",
+				"exec": [
+					"const mocckConfig = pm.collectionVariables.get(\"mockConfig\");",
+					"if(!mocckConfig){",
+					"    ",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "661694a1-2c10-4a15-96bd-92a2b16f97ea",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
 	]
 }
