@@ -684,12 +684,12 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "167dc78c-d0f7-4a6d-9d21-f7fc78c1337e",
+				"id": "adb1751f-a3bd-46fe-8ba4-90348aaa7ab1",
 				"type": "text/javascript",
 				"exec": [
-					"const mocckConfig = pm.collectionVariables.get(\"mockConfig\");",
-					"if(!mocckConfig){",
-					"    ",
+					"const mockConfig = pm.collectionVariables.get(\"mockConfig\");",
+					"if(!mockConfig){",
+					"    console.log(`No Mock Config Found`)",
 					"}"
 				]
 			}
@@ -697,7 +697,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "661694a1-2c10-4a15-96bd-92a2b16f97ea",
+				"id": "0d251151-d77c-4281-9737-1ecad780f14b",
 				"type": "text/javascript",
 				"exec": [
 					""
