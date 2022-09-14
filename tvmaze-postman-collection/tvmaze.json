@@ -713,7 +713,7 @@
 	],
 	"variable": [
 		{
-			"id": "d50e2f71-711a-4202-a6bc-d34dfa149d69",
+			"id": "8d7ebcf8-8939-44b7-a5d7-a88c0fdc8aea",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
