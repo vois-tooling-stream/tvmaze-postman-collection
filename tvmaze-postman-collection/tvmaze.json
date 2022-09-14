@@ -691,7 +691,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "29073f14-2612-4822-b6db-6e26be51c46c",
+				"id": "9707b323-9d01-421a-b620-00d7f21929a6",
 				"type": "text/javascript",
 				"exec": [
 					"let mocksConfig = pm.collectionVariables.get(\"mocksConfig\");",
@@ -699,7 +699,7 @@
 					"if(!mocksConfig && mocksConfigURL){",
 					"    console.log(`No Mock Config Found, Trying to get it from ${mocksConfigURL}`)",
 					"    pm.sendRequest(mocksConfigURL, function (err, response) {",
-					"        mocksConfig = JSON.stringify(response)",
+					"        mocksConfig = JSON.stringify(response.json())",
 					"        console.log(`Response is ${mocksConfig}`)",
 					"        pm.collectionVariables.set(\"mocksConfig\")",
 					"    });",
@@ -710,7 +710,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4e71d971-da6e-4816-8192-f7631ffc4aa9",
+				"id": "ca49786d-2424-4703-9e8d-dc3d94f734c6",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -720,19 +720,19 @@
 	],
 	"variable": [
 		{
-			"id": "51eacacf-9e03-4b86-a5ec-b93c2b29daeb",
+			"id": "a80c2945-65c9-44f8-8045-a5f89e09aace",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "4c4584d6-7eb8-4821-b2aa-440aa54b99eb",
+			"id": "ad2a71ee-3fa7-46be-baa8-6dea9097e6bf",
 			"key": "selectedTestCase",
 			"value": "testcase_example1",
 			"type": "string"
 		},
 		{
-			"id": "71c8f882-f38e-447c-8623-cf2fcd8bab3a",
+			"id": "d7231ad2-8712-4da4-86f1-30f04ce9ca13",
 			"key": "mocksConfig",
 			"value": ""
 		}
