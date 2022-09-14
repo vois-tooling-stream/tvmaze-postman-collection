@@ -597,6 +597,44 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "[\r\n    {\r\n        \"id\": 2,\r\n        \"url\": \"https://www.tvmaze.com/episodes/2/under-the-dome-1x02-the-fire\",\r\n        \"name\": \"The Fire\",\r\n        \"season\": 1,\r\n        \"number\": 2,\r\n        \"type\": \"regular\",\r\n        \"airdate\": \"2013-07-01\",\r\n        \"airtime\": \"22:00\",\r\n        \"airstamp\": \"2013-07-02T02:00:00+00:00\",\r\n        \"runtime\": 60,\r\n        \"rating\": {\r\n            \"average\": 7.3\r\n        },\r\n        \"image\": {\r\n            \"medium\": \"https://static.tvmaze.com/uploads/images/medium_landscape/1/4389.jpg\",\r\n            \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/1/4389.jpg\"\r\n        },\r\n        \"summary\": \"<p>While the residents of Chester's Mill face the uncertainty of life in the dome, panic is heightened when a house goes up in flames and their fire department is outside of the dome.</p>\",\r\n        \"_links\": {\r\n            \"self\": {\r\n                \"href\": \"https://api.tvmaze.com/episodes/2\"\r\n            }\r\n        }\r\n    }\r\n]"
+								},
+								{
+									"id": "9629396a-47b7-4c5f-ad68-2d2da06a238e",
+									"name": "TVShows_EpisodeByDate_GetEpisodeWithValidQueryParameters_400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{mock_uri}}/shows/:id/episodesbydate?date=2013-07-01",
+											"host": [
+												"{{mock_uri}}"
+											],
+											"path": [
+												"shows",
+												":id",
+												"episodesbydate"
+											],
+											"query": [
+												{
+													"key": "date",
+													"value": "2013-07-01"
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\r\n    {\r\n        \"id\": 2,\r\n        \"url\": \"https://www.tvmaze.com/episodes/2/under-the-dome-1x02-the-fire\",\r\n        \"name\": \"The Fire\",\r\n        \"season\": 1,\r\n        \"number\": 2,\r\n        \"type\": \"regular\",\r\n        \"airdate\": \"2013-07-01\",\r\n        \"airtime\": \"22:00\",\r\n        \"airstamp\": \"2013-07-02T02:00:00+00:00\",\r\n        \"runtime\": 60,\r\n        \"rating\": {\r\n            \"average\": 7.3\r\n        },\r\n        \"image\": {\r\n            \"medium\": \"https://static.tvmaze.com/uploads/images/medium_landscape/1/4389.jpg\",\r\n            \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/1/4389.jpg\"\r\n        },\r\n        \"summary\": \"<p>While the residents of Chester's Mill face the uncertainty of life in the dome, panic is heightened when a house goes up in flames and their fire department is outside of the dome.</p>\",\r\n        \"_links\": {\r\n            \"self\": {\r\n                \"href\": \"https://api.tvmaze.com/episodes/2\"\r\n            }\r\n        }\r\n    }\r\n]"
 								}
 							]
 						},
@@ -763,19 +801,19 @@
 	],
 	"variable": [
 		{
-			"id": "28edee45-d11c-4b96-8b58-e8157d417256",
+			"id": "702ed21d-fe98-40b8-8a5d-31fedf1eb01a",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "0b1a5e61-0ea3-4b39-ae99-bbda7802a578",
+			"id": "4ccac7be-810c-4c83-b1d7-388be6d21a35",
 			"key": "selectedTestCase",
 			"value": "testcase_example1",
 			"type": "string"
 		},
 		{
-			"id": "12742b06-5a09-41e8-91d8-e94cb3b46ef7",
+			"id": "437a6d20-4e4e-4cbe-a5aa-60c444f7cad7",
 			"key": "mocksConfig",
 			"value": ""
 		}
