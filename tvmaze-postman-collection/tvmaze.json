@@ -628,8 +628,8 @@
 											]
 										}
 									},
-									"status": "OK",
-									"code": 200,
+									"status": "Bad Request",
+									"code": 400,
 									"_postman_previewlanguage": null,
 									"header": null,
 									"cookie": [],
@@ -801,19 +801,19 @@
 	],
 	"variable": [
 		{
-			"id": "702ed21d-fe98-40b8-8a5d-31fedf1eb01a",
+			"id": "7c3addb2-ce75-402c-b8af-8511ee769225",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "4ccac7be-810c-4c83-b1d7-388be6d21a35",
+			"id": "1ada6fb8-ff59-4731-bd8c-365e4b74a583",
 			"key": "selectedTestCase",
 			"value": "testcase_example1",
 			"type": "string"
 		},
 		{
-			"id": "437a6d20-4e4e-4cbe-a5aa-60c444f7cad7",
+			"id": "ce5fe569-7e06-4f2c-b1e4-93ae9de348d6",
 			"key": "mocksConfig",
 			"value": ""
 		}
