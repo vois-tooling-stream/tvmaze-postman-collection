@@ -1,0 +1,26 @@
+{
+  "testCases": {
+    "testcase_example1": {
+      "apis": {
+        "EpisodeByNumber": {
+          "baseURL": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/shows/:id/episodebynumber?season=1&number=1",
+          "headers": {
+            "x-mock-response-name": "TVShows_EpisodeByNumber_GetEpisodeWithValidQueryParameters_200"
+          }
+        },
+        "EpisodesByDate": {
+          "baseURL": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/shows/:id/episodesbydate?date=2013-07-01",
+          "headers": {
+            "x-mock-response-name": "TVShows_EpisodeByDate_GetEpisodeWithValidQueryParameters_200"
+          }
+        },
+        "Seasons": {
+          "baseURL": "https://3d26c040-9089-4a24-8b67-4c638255e473.mock.pstmn.io/shows/1/seasons",
+          "headers": {
+            "x-mock-response-name": "TVShows_Seasons_GetSeasonsWithValidShowId_200"
+          }
+        }
+      }
+    }
+  }
+}
