@@ -745,7 +745,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{mock_uri}}/shows?page=0",
+											"raw": "{{mock_uri}}/shows?page=$",
 											"host": [
 												"{{mock_uri}}"
 											],
@@ -755,7 +755,7 @@
 											"query": [
 												{
 													"key": "page",
-													"value": "0"
+													"value": "$"
 												}
 											]
 										}
@@ -840,19 +840,19 @@
 	],
 	"variable": [
 		{
-			"id": "f4ccfef4-0b9e-4090-afcb-5788bec0fa4f",
+			"id": "71dc18bc-c8da-49da-ae67-402a1c805fdd",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "99de23e1-340f-43f6-bb65-48a06f8db401",
+			"id": "53f59f1e-c0b6-4415-9eb3-a67c156973ff",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "14a47546-b78d-4ba1-8fbe-c3142fbfb6bb",
+			"id": "cbcb25ef-f1cd-4dad-8598-cd00230e2352",
 			"key": "mocksConfig",
 			"value": ""
 		}
