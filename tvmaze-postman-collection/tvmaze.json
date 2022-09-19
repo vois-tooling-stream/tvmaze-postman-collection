@@ -667,7 +667,8 @@
 										"header": [],
 										"url": "{{mock_uri}}/shows/1/season"
 									},
-									"code": 200,
+									"status": "Not Found",
+									"code": 404,
 									"_postman_previewlanguage": null,
 									"header": null,
 									"cookie": [],
@@ -810,19 +811,19 @@
 	],
 	"variable": [
 		{
-			"id": "7a064d96-7c71-4595-a5ec-ce1a1a641f21",
+			"id": "cc65f670-4b92-4af1-8062-450a40919048",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "85508812-7767-45bb-bd8d-817ca51d2f34",
+			"id": "fd5992b6-d56f-4229-bfa9-ba9d8af053f4",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "b65a60ce-f94e-4413-a5b7-115340389ea4",
+			"id": "a27525e5-f67f-46d4-a61d-4257e059e5f8",
 			"key": "mocksConfig",
 			"value": ""
 		}
