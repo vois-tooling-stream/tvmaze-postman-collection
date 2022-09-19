@@ -592,7 +592,7 @@
 								},
 								{
 									"id": "9629396a-47b7-4c5f-ad68-2d2da06a238e",
-									"name": "TVShows_EpisodeByDate_GetEpisodeWithValidQueryParameters_400",
+									"name": "TVShows_EpisodeByDate_GetEpisodeWithQueryParameters_400",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -793,19 +793,19 @@
 	],
 	"variable": [
 		{
-			"id": "0db18b6a-b9e5-4989-827c-0bd2c2698117",
+			"id": "1298cae0-409c-4de1-849f-4a7a7ee11fa1",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "340a6154-d535-4275-a4a4-f8d8194446cd",
+			"id": "9c836af3-01d4-4e24-8e29-46306f59eefe",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "fb4039b2-c0b5-4aea-99d0-72180a5b9d6b",
+			"id": "6a7f9860-9758-47ef-90c8-8e01d9236d43",
 			"key": "mocksConfig",
 			"value": ""
 		}
