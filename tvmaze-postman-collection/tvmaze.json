@@ -407,7 +407,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{tv_maze}}/shows/:id/episodebynumber?season=1&number=",
+									"raw": "{{tv_maze}}/shows/:id/episodebynumber?season=1&number=1",
 									"host": [
 										"{{tv_maze}}"
 									],
@@ -423,7 +423,7 @@
 										},
 										{
 											"key": "number",
-											"value": ""
+											"value": "1"
 										}
 									],
 									"variable": [
@@ -801,19 +801,19 @@
 	],
 	"variable": [
 		{
-			"id": "ab28ecb4-a9fc-4645-953a-13b4770b370f",
+			"id": "7da8cdd5-6b83-4e39-a283-f2129c980bd3",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "c6b235ee-8921-45ab-9d37-0d9053fab2f6",
+			"id": "773ff1bf-3a0e-4bf3-998c-d6fae948e1a0",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "f66122c0-4299-4dfe-bd13-67914c892544",
+			"id": "40421b46-2aa6-4681-ae01-f146089e08eb",
 			"key": "mocksConfig",
 			"value": ""
 		}
