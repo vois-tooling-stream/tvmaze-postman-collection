@@ -661,7 +661,7 @@
 								},
 								{
 									"id": "cb51506d-b1bb-41ee-aae9-e36eeecde70f",
-									"name": "TVShows_Seasons_GetSeasonsWithInvalidUriShowId_404",
+									"name": "TVShows_Seasons_GetSeasonsWithValidShowId_200 Copy",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -811,19 +811,19 @@
 	],
 	"variable": [
 		{
-			"id": "7b39084a-594a-4d00-9a01-7d96a1c02b71",
+			"id": "faad344f-b75a-40da-9d18-7d557cd75e3e",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "a287d8be-c2fc-4cd0-a16e-a8ac4bee45b9",
+			"id": "d1933080-57bf-441a-95c0-cdb0c2a97fc5",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "c40c360e-0310-4cff-bb49-0845ff946551",
+			"id": "494983d3-7645-4b8a-8189-9a2940ad1817",
 			"key": "mocksConfig",
 			"value": ""
 		}
