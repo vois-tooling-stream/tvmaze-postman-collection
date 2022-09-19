@@ -740,7 +740,7 @@
 								},
 								{
 									"id": "660260ec-0326-4828-ac50-4f2e9429d189",
-									"name": "TVShows_GetShowsByPage_WithinvalidPaginationIndex_490",
+									"name": "TVShows_GetShowsByPage_WithinvalidPaginationIndex_400",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -841,19 +841,19 @@
 	],
 	"variable": [
 		{
-			"id": "2a191d23-1670-4b95-bca3-5f1e038d4494",
+			"id": "c879170b-4897-4b71-a191-28a41af0ae05",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "8dd4c6e6-bea1-435a-8578-dc765e96aa0d",
+			"id": "f24b9e34-76b1-41e5-a373-2a97e32cb6d7",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "8a56c2f7-7d0d-4a55-9c1d-04cbbd883d4c",
+			"id": "8a55d432-fb94-4b0e-8250-407e1317985b",
 			"key": "mocksConfig",
 			"value": ""
 		}
