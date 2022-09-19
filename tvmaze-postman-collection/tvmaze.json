@@ -597,7 +597,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{mock_uri}}/shows/:id/episodesbydate?date=2013-07-01",
+											"raw": "{{mock_uri}}/shows/:id/episodesbydate",
 											"host": [
 												"{{mock_uri}}"
 											],
@@ -609,7 +609,8 @@
 											"query": [
 												{
 													"key": "date",
-													"value": "2013-07-01"
+													"value": "2013-07-01",
+													"disabled": true
 												}
 											],
 											"variable": [
@@ -626,7 +627,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": ""
+									"body": "{\r\n    \"name\": \"Bad Request\",\r\n    \"message\": \"Missing required parameters: date\",\r\n    \"code\": 0,\r\n    \"status\": 400\r\n}"
 								}
 							]
 						},
@@ -793,19 +794,19 @@
 	],
 	"variable": [
 		{
-			"id": "da3a73fe-b1a9-49f8-aae4-d979eb1497b6",
+			"id": "8bc6bffb-6ab1-4cdb-b61b-2a2316fd350a",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "012b611c-cbaa-4409-8635-cd7700fbe923",
+			"id": "d342775e-07f6-43d9-b36a-7ea8230eb5a0",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "68c413b1-37a8-487c-86f8-6b5e00d12464",
+			"id": "429951c4-e637-4269-9208-a111c5c421a2",
 			"key": "mocksConfig",
 			"value": ""
 		}
