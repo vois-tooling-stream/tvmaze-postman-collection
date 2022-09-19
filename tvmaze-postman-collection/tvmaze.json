@@ -641,7 +641,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{tv_maze}}/shows/1/seasons"
+								"url": "{{mock_uri}}/shows/1/season"
 							},
 							"response": [
 								{
@@ -661,7 +661,7 @@
 								},
 								{
 									"id": "cb51506d-b1bb-41ee-aae9-e36eeecde70f",
-									"name": "TVShows_Seasons_GetSeasonsWithValidShowId_200 Copy",
+									"name": "TVShows_Seasons_GetSeasonsWithInvalidUriShowId_404",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -811,19 +811,19 @@
 	],
 	"variable": [
 		{
-			"id": "faad344f-b75a-40da-9d18-7d557cd75e3e",
+			"id": "1538624f-2b19-41e8-a47c-f0330e6550fd",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "d1933080-57bf-441a-95c0-cdb0c2a97fc5",
+			"id": "f0fa0159-5a4f-43aa-abc6-572b213a11e6",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "494983d3-7645-4b8a-8189-9a2940ad1817",
+			"id": "85290761-60ac-4da3-98fd-d91e845d0632",
 			"key": "mocksConfig",
 			"value": ""
 		}
