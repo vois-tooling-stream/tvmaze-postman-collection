@@ -523,9 +523,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{tv_maze}}/shows/:id/episodesbydate",
+									"raw": "{{mock_uri}}/shows/:id/episodesbydate",
 									"host": [
-										"{{tv_maze}}"
+										"{{mock_uri}}"
 									],
 									"path": [
 										"shows",
@@ -795,19 +795,19 @@
 	],
 	"variable": [
 		{
-			"id": "3effb837-4a67-47c4-a09c-2f65233385a4",
+			"id": "b2e08e66-d7a1-4ece-ae3f-946b8b1d0509",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "9d9c6fff-9d37-4a7c-af3b-411c8b97d657",
+			"id": "948f5f0d-6fc4-4735-9513-43be5a375773",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "621b315f-aeec-4de2-8216-0c2568416db9",
+			"id": "69de3ddb-7c82-478c-a8b7-96d95d4d2141",
 			"key": "mocksConfig",
 			"value": ""
 		}
