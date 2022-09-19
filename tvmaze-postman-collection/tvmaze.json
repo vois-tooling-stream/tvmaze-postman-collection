@@ -513,7 +513,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": ""
+									"body": "{\r\n    \"name\": \"Bad Request\",\r\n    \"message\": \"Missing required parameters: number\",\r\n    \"code\": 0,\r\n    \"status\": 400\r\n}"
 								}
 							]
 						},
@@ -797,19 +797,19 @@
 	],
 	"variable": [
 		{
-			"id": "92f32801-5bdb-415d-b417-f30fa5593a90",
+			"id": "553a2be9-b73e-4ef1-ab97-b891b0368eaf",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "29eddc4c-c46d-4c08-817e-e79f4ae2dd0b",
+			"id": "008ec943-9d5d-4a4e-be04-68bc6a47ae4c",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "5d5977cd-da3f-4244-82a9-b2ae069bba83",
+			"id": "5f274d7a-52a3-491a-a3c6-9c38bf1906f6",
 			"key": "mocksConfig",
 			"value": ""
 		}
