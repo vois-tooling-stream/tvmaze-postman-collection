@@ -782,7 +782,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{tv_maze}}/shows"
+						"url": "{{mock_uri}}/sho"
 					},
 					"response": [
 						{
@@ -857,19 +857,19 @@
 	],
 	"variable": [
 		{
-			"id": "02da2959-247f-494f-b322-16337c075342",
+			"id": "07245442-cd81-4f56-9a07-3b1a44a3b408",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "6e16e185-44d0-4bba-90ce-95c9df804cc4",
+			"id": "8a645414-6ba1-4f92-9732-59a120fbabf6",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "db28fdb6-babb-4fd1-91c2-9cf3ed660ca6",
+			"id": "a6722b05-cc89-482c-816a-96d983beefe6",
 			"key": "mocksConfig",
 			"value": ""
 		}
