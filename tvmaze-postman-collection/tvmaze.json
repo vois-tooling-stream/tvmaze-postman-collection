@@ -841,19 +841,19 @@
 	],
 	"variable": [
 		{
-			"id": "586ee634-9be8-4e0c-ba4c-7c12f4871fa6",
+			"id": "2a191d23-1670-4b95-bca3-5f1e038d4494",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "e7af2d3c-9579-4b24-89d0-c682034c2b07",
+			"id": "8dd4c6e6-bea1-435a-8578-dc765e96aa0d",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "27ab5e96-3d07-4183-8824-afe0714bd7c9",
+			"id": "8a56c2f7-7d0d-4a55-9c1d-04cbbd883d4c",
 			"key": "mocksConfig",
 			"value": ""
 		}
