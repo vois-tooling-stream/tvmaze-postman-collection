@@ -809,8 +809,8 @@
 								"header": [],
 								"url": "{{mock_uri}}/shows"
 							},
-							"status": "OK",
-							"code": 200,
+							"status": "Not Found",
+							"code": 404,
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
@@ -857,19 +857,19 @@
 	],
 	"variable": [
 		{
-			"id": "b15c3ef4-65ce-4a61-88a9-9e830629583c",
+			"id": "9d3c738b-daae-46ca-afa2-72400fe4590b",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "d28bf3c2-7abf-4028-9896-594353bf3415",
+			"id": "d081b9f0-7f6d-4948-afd5-cc3bffade83e",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "cfa3e79e-945f-4b21-816a-c8d6242c0acd",
+			"id": "8e8c0dd1-78d3-4fad-85ec-55c11d8096db",
 			"key": "mocksConfig",
 			"value": ""
 		}
