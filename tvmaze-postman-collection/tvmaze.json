@@ -127,7 +127,7 @@
 					"response": [
 						{
 							"id": "7de6a3c3-d8d4-4bb7-8848-609fc7543c00",
-							"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_200",
+							"name": "TVSearch_SearchShows_GetEmptyShowsListWithNonExistingQuery_201",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -857,19 +857,19 @@
 	],
 	"variable": [
 		{
-			"id": "3894398d-1ae8-4cd6-8fe6-a37bda14b51a",
+			"id": "ef500b0a-5503-4484-be0d-c44acc85f783",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "d7047c05-03ba-4f37-9a69-b0efc1c5c7a6",
+			"id": "a456eb24-a5c3-4916-bba6-c84b4fa34952",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "17b5d716-4c07-4540-8c9a-cbfda00fa455",
+			"id": "9f2fa48a-0be8-4764-bb96-c456e08aca16",
 			"key": "mocksConfig",
 			"value": ""
 		}
