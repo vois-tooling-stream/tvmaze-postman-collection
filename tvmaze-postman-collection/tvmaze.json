@@ -827,7 +827,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2dd445f1-a381-442a-9a82-7c4956acfbf2",
+				"id": "587eb35d-26dd-4eac-bfac-667bd49189e0",
 				"type": "text/javascript",
 				"exec": [
 					"let mocksConfig = pm.collectionVariables.get(\"mocksConfig\");",
@@ -857,7 +857,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "327a0a04-6d5c-4097-b5a5-7e6783111eba",
+				"id": "e0a1e092-23f4-4639-b454-7597077c5db9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -867,26 +867,26 @@
 	],
 	"variable": [
 		{
-			"id": "fc83ee37-106a-498d-b99c-3641dd04f71c",
+			"id": "cfeade78-e286-49fd-a378-a10849d64072",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "41505a19-ae1b-4cfb-bc32-c09b90172604",
+			"id": "d85f0346-160e-4747-ad8e-72797bae4518",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "f60757a3-dea9-4c17-a4ed-f8e2453d3540",
+			"id": "35e4bf65-739f-451b-ada6-bb0f0b9cbecb",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "414f139a-880a-4849-a3be-7d4ab1fa6715",
+			"id": "51ac7422-115a-4aa4-87e8-b6928613345d",
 			"key": "apiKey",
-			"value": "PMAK-632b03e01f230a20eea1fab5-59c4edab2b97adf591f5656546f74e6dc",
+			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
 		}
 	]
