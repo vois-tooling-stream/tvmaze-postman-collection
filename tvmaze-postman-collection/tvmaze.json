@@ -827,7 +827,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cd68733c-b3de-4175-88c7-4727f0a7ec75",
+				"id": "cd4aa24c-573f-4439-aedb-64b98e9138c1",
 				"type": "text/javascript",
 				"exec": [
 					"let mocksConfig = pm.collectionVariables.get(\"mocksConfig\");",
@@ -842,17 +842,21 @@
 					"    mocksConfig = JSON.parse(mocksConfig)",
 					"}",
 					"",
-					"pm.sendRequest(\"https://api.getpostman.com/collections/tvmaze-collection\", function(err, response){",
-					"    ",
-					"});",
-					""
+					"pm.sendRequest(",
+					"    {url:  'https://api.getpostman.com/collections/tvmaze-collection', ",
+					"      method: 'GET',",
+					"      header: {",
+					"        'X-Api-Key': 'PMAK-632b03e01f230a20eea1fab5-59c4edab2b97adf591f5656546f74e6dc\"'",
+					"      }}, function(err, response){",
+					"",
+					"});"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "a462f1cb-f27c-4a29-961e-b8bfa5a115d1",
+				"id": "f06bf82b-b761-4c89-b725-1042086c7582",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -862,19 +866,19 @@
 	],
 	"variable": [
 		{
-			"id": "0d459d0e-806f-4ca8-b342-bf8560d7d56a",
+			"id": "1efd95d6-3ed3-4544-aa5c-db56ca1fc1c5",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "15f420d2-c7f8-451b-9a6a-d8ef99bdbeaf",
+			"id": "026f9b9e-5c79-4e27-8be9-f802829fc112",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "01e838bf-c108-4c9a-bfa5-12eca5adc556",
+			"id": "f353069b-0eb8-40ff-8174-e4d643efceca",
 			"key": "mocksConfig",
 			"value": ""
 		}
