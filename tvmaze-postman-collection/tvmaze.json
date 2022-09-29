@@ -827,25 +827,11 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f8ee4495-16c4-4916-bfbe-cba0bc51d46a",
+				"id": "7cf04104-fd0f-44c0-a217-7693cc4fcefe",
 				"type": "text/javascript",
 				"exec": [
 					"let mocksConfig = pm.collectionVariables.get(\"mocksConfig\");",
 					"const mocksConfigURL = pm.collectionVariables.get(\"mocksConfigURL\")",
-					"if(!mocksConfig && mocksConfigURL){",
-					"    console.warn(`No Mocks Configuration Found, Trying to get it from ${mocksConfigURL}`)",
-					"    pm.sendRequest(mocksConfigURL, function (err, response) {",
-					"        if(!err){",
-					"        mocksConfig = response.json()",
-					"        pm.collectionVariables.set(\"mocksConfig\", JSON.stringify(mocksConfig))",
-					"        matchRequestWithMockConfig(mocksConfig)",
-					"        }",
-					"    });",
-					"}",
-					"if(mocksConfig) {",
-					"    mocksConfig = JSON.parse(mocksConfig)",
-					"    matchRequestWithMockConfig(mocksConfig)",
-					"}",
 					"const matchRequestWithMockConfig = function(mocksConfig) {",
 					"    if(mocksConfig.testCases){",
 					"        const testCasesName = Object.keys(mocksConfig.testCases)",
@@ -859,6 +845,20 @@
 					"           }",
 					"        }",
 					"    }",
+					"}",
+					"if(!mocksConfig && mocksConfigURL){",
+					"    console.warn(`No Mocks Configuration Found, Trying to get it from ${mocksConfigURL}`)",
+					"    pm.sendRequest(mocksConfigURL, function (err, response) {",
+					"        if(!err){",
+					"        mocksConfig = response.json()",
+					"        pm.collectionVariables.set(\"mocksConfig\", JSON.stringify(mocksConfig))",
+					"        matchRequestWithMockConfig(mocksConfig)",
+					"        }",
+					"    });",
+					"}",
+					"if(mocksConfig) {",
+					"    mocksConfig = JSON.parse(mocksConfig)",
+					"    matchRequestWithMockConfig(mocksConfig)",
 					"}"
 				]
 			}
@@ -866,7 +866,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7620648e-f679-4a47-8e18-dd228406fcd6",
+				"id": "cb17e3cd-6fd5-48f9-ab6d-da4b4f9220ca",
 				"type": "text/javascript",
 				"exec": [
 					"if(pm.response.code === 404){",
@@ -878,24 +878,24 @@
 	],
 	"variable": [
 		{
-			"id": "ed800886-7d9a-45db-b5ad-a443588ebfc0",
+			"id": "bd8edf4d-e422-4f95-95e6-67e848ed3f39",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "4524c933-79f9-4860-b7e4-7bbd9930402c",
+			"id": "534a77a9-7274-452a-9449-142f5c87e043",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "7d955fd0-5ca1-4dc0-9cb8-e47240580900",
+			"id": "2d0eb43b-905f-49ea-b29d-6b1de12063ad",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "a0697ad3-3ace-48dc-a4fd-32f26459701b",
+			"id": "4d982ac9-7b4c-4dfb-8275-76aa55f5bd2d",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
