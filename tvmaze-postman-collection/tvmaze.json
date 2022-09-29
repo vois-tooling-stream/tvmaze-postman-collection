@@ -827,7 +827,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "24b4ec96-ebde-48b7-bfb6-6a2db55badd0",
+				"id": "379cae8a-6d8c-4662-aaa0-b2d5f07fac7e",
 				"type": "text/javascript",
 				"exec": [
 					"let mocksConfig = pm.collectionVariables.get(\"mocksConfig\");",
@@ -846,10 +846,15 @@
 					"}",
 					"const matchRequestWithMockConfig = function(mocksConfig) {",
 					"    if(mocksConfig.testCases){",
-					"        const testCases = Object.keys(mocksConfig.testCases)",
-					"        for(let i = 0 ; i < testCases.length; i++){",
-					"           const testCaseAPIs = mocksConfig.testCases[testCases[i]].apis",
-					"            ",
+					"        const testCasesName = Object.keys(mocksConfig.testCases)",
+					"        for(let i = 0 ; i < testCasesName.length; i++){",
+					"           const testCaseAPIs = mocksConfig.testCases[testCasesName[i]].apis",
+					"           const testCasesAPIKeys = Object.keys(testCaseAPIs)",
+					"           for(let j = 0 ; j < testCasesAPIKeys.length; j++){",
+					"               const baseURL = testCaseAPIs[testCasesAPIKeys[j]].baseURL",
+					"               const headers = testCaseAPIs[testCasesAPIKeys[j]].headers",
+					"               console.log(`Comparing ${baseURL} with ${JSON.stringify(pm.request.url)}`) ",
+					"           }",
 					"        }",
 					"    }",
 					"}"
@@ -859,7 +864,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0db077f5-269f-4708-98e7-1eee6df966be",
+				"id": "e9fe416e-1ddc-4fe4-bd24-83165905d664",
 				"type": "text/javascript",
 				"exec": [
 					"if(pm.response.code === 404){",
@@ -871,24 +876,24 @@
 	],
 	"variable": [
 		{
-			"id": "0a615613-bc0f-4e9d-9d1f-054e80039a1c",
+			"id": "1fe880c6-9344-4851-9a00-3d3f292a30cc",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "40a7e318-85f1-4f7a-95dd-b461f25df894",
+			"id": "0992d056-51ce-4b02-94ee-95a61a02a05e",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "099f1d5f-9258-475c-b309-ce76433ae5c4",
+			"id": "9a3c2a90-c1f5-4e62-a17f-2adc0956b099",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "e79a037d-068c-4e4b-8f3a-43c952487bd5",
+			"id": "0a0cae9a-4f3b-4f1b-8e55-5d887edb3bf4",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
