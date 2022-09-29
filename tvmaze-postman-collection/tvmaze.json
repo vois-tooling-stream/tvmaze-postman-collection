@@ -831,7 +831,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1285082d-625d-42f6-bc7c-a3ff825cc54d",
+				"id": "76c91cee-3652-4e2b-bd8a-df314175461a",
 				"type": "text/javascript",
 				"exec": [
 					"const url = require('url');",
@@ -847,7 +847,7 @@
 					"               const baseURL = testCaseAPIs[testCasesAPIKeys[j]].baseURL",
 					"               const headers = testCaseAPIs[testCasesAPIKeys[j]].headers",
 					"               const parsedURL = url.parse(baseURL)",
-					"               console.log(`Comparing ${parsedURL} with ${JSON.stringify(pm.request.url)}`);",
+					"               console.log(`Comparing ${JSON.stringify(parsedURL)} with ${JSON.stringify(pm.request.url)}`);",
 					"           }",
 					"        }",
 					"    }",
@@ -872,7 +872,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ad5d4b78-bbb6-46cc-88ff-25b07a09ede7",
+				"id": "7a7b84e3-05b1-4f79-a623-85889d3cfa6c",
 				"type": "text/javascript",
 				"exec": [
 					"if(pm.response.code === 404){",
@@ -884,24 +884,24 @@
 	],
 	"variable": [
 		{
-			"id": "792e6d3e-31d2-46bc-891c-f804de8a18c1",
+			"id": "494944c2-ef3e-44a1-bbea-967b8624f0f3",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "ce17b9a7-2ad0-42a8-a76d-f24b33b94278",
+			"id": "145d8040-0deb-485e-8200-33130dbfb968",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "d6de9e13-f288-4ed2-9088-2f90c6a3f541",
+			"id": "e53dc132-f344-4392-8419-b65ebf628863",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "e918e464-96b1-41a6-9ceb-af4b3fb5217f",
+			"id": "b008dddb-6bdd-4680-a823-7ed7ff7cd181",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
