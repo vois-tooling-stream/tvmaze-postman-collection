@@ -572,13 +572,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{mock_uri}}/shows/:id/episodesbydate",
+											"raw": "{{mock_uri}}/shows/1/episodesbydate",
 											"host": [
 												"{{mock_uri}}"
 											],
 											"path": [
 												"shows",
-												":id",
+												"1",
 												"episodesbydate"
 											],
 											"query": [
@@ -586,12 +586,6 @@
 													"key": "date",
 													"value": "2013-07-01",
 													"disabled": true
-												}
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "1"
 												}
 											]
 										}
@@ -855,24 +849,24 @@
 	],
 	"variable": [
 		{
-			"id": "424faa7a-105e-4194-9019-e9277926b968",
+			"id": "70c35fcc-0f3d-439d-9786-a290006fd015",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "1d519ff6-6fa2-4550-ae3a-67e14d987ffa",
+			"id": "04e8e86c-e1d1-4af2-90e5-370cf2847da9",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "d98bf8bd-1c78-49ff-9d46-ccbb9b5991b8",
+			"id": "1e1341b1-d76e-423e-8c86-9bd2a9974477",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "b41c6e13-8295-4f3c-8db3-c8428ee6b2c1",
+			"id": "ed390590-76fd-4deb-a3d8-e6eeaebeb5ba",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
