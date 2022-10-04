@@ -26,7 +26,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{mock_uri}}/singlesearch/shows?q=true%20detective&embed=episode",
+									"raw": "{{mock_uri}}/singlesearch/shows?q=true%20detective",
 									"host": [
 										"{{mock_uri}}"
 									],
@@ -38,10 +38,6 @@
 										{
 											"key": "q",
 											"value": "true%20detective"
-										},
-										{
-											"key": "embed",
-											"value": "episode"
 										}
 									]
 								}
@@ -885,24 +881,24 @@
 	],
 	"variable": [
 		{
-			"id": "6faa272c-eeba-4f5a-b67c-71db871ce106",
+			"id": "f47665af-f7ff-4435-bb99-d41edc80496b",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "13600c01-699c-47a7-b78b-4baf68471b87",
+			"id": "695bc522-3b2c-4186-b254-1c3b7efe8aae",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "fc4d2444-ea27-4d7c-be71-1ac6b501ca60",
+			"id": "031916ce-bf7b-4849-814e-b429a8aed8a6",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "dbdc021c-2cff-41a9-ab4b-345faee448cc",
+			"id": "9711301c-cb51-4961-8264-b344bfadcb37",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
