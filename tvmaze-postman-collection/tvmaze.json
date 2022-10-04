@@ -26,7 +26,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{mock_uri}}/singlesearch/shows?q=mind-hunter&embed=episode",
+									"raw": "{{mock_uri}}/singlesearch/shows?q=true%20detective&embed=episode",
 									"host": [
 										"{{mock_uri}}"
 									],
@@ -37,7 +37,7 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "mind-hunter"
+											"value": "true%20detective"
 										},
 										{
 											"key": "embed",
@@ -885,24 +885,24 @@
 	],
 	"variable": [
 		{
-			"id": "9e4bce65-694e-48b3-9bdd-344f1c46ea8b",
+			"id": "9e844653-eb64-4851-8a9e-e2304e010062",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "1ef913e8-97e6-49e7-8c76-e92a4b1a92ad",
+			"id": "ba436497-5db2-49af-b87d-91b5cbae1f49",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "c350df12-414a-4ed6-9680-0277eac16b04",
+			"id": "5bb5b44e-e8a4-4a37-b1f6-1f46a852c085",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "5696f82f-dac6-4c99-8722-5e5b64407579",
+			"id": "7736a776-7791-4b59-b17e-53c368b0304d",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
