@@ -48,7 +48,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"name\": \"Bad Request\",\n    \"message\": \"Missing required parameters: q\",\n    \"code\": 0,\n    \"status\": 400\n}"
 						},
 						{
 							"id": "18c87cd3-fcbe-4527-9313-7ffece18e67c",
@@ -832,24 +832,24 @@
 	],
 	"variable": [
 		{
-			"id": "db447884-47c1-463c-b5f7-dfda04b274da",
+			"id": "08dc5f6e-e566-4ee8-ac0d-9f41e126a8d3",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "e3a43832-a36f-4795-bcb7-a64eaa1f4e32",
+			"id": "17533115-8bfd-408d-bdb5-46ff33b59f2f",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "0cacbe1b-0655-4db6-b763-52ecadf9945a",
+			"id": "c28a3335-5206-423b-8f99-3018a59eaaaf",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "ff3d7de8-e0ee-4e7a-99fe-9d58f657c9e4",
+			"id": "cce745e4-ac68-4977-8349-066dead8561e",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
