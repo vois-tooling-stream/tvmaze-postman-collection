@@ -78,7 +78,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": ""
+							"body": "[\n    {\n        \"score\": 0.5204634,\n        \"show\": {\n            \"id\": 10822,\n            \"url\": \"https://www.tvmaze.com/shows/10822/mindhunter\",\n            \"name\": \"MINDHUNTER\",\n            \"type\": \"Scripted\",\n            \"language\": \"English\",\n            \"genres\": [\n                \"Drama\",\n                \"Crime\",\n                \"Thriller\"\n            ],\n            \"status\": \"Ended\",\n            \"runtime\": null,\n            \"averageRuntime\": 54,\n            \"premiered\": \"2017-10-13\",\n            \"ended\": \"2019-08-16\",\n            \"officialSite\": \"https://www.netflix.com/title/80114855\",\n            \"schedule\": {\n                \"time\": \"\",\n                \"days\": []\n            },\n            \"rating\": {\n                \"average\": 8.4\n            },\n            \"weight\": 97,\n            \"network\": null,\n            \"webChannel\": {\n                \"id\": 1,\n                \"name\": \"Netflix\",\n                \"country\": null,\n                \"officialSite\": \"https://www.netflix.com/\"\n            },\n            \"dvdCountry\": null,\n            \"externals\": {\n                \"tvrage\": null,\n                \"thetvdb\": 328708,\n                \"imdb\": \"tt5290382\"\n            },\n            \"image\": {\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/207/518594.jpg\",\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/207/518594.jpg\"\n            },\n            \"summary\": \"<p><b>MINDHUNTER</b> is based on the 1996 book<i> Mind Hunter: Inside the FBI's Elite Serial Crime Unit</i>, by former special agent John Douglas and Mark Olshaker. For years, Douglas pursued some of the most notorious serial killers and rapists, developing profiling techniques to catch them. The book goes behind the scenes of some of his highest-profile cases, including the man who hunted prostitutes in Alaska, the Atlanta child murderer, and Seattle's Green River killer. To hone in his profiling methods Douglas interviewed and studied a skew of serial killers. Several book and TV characters have been based in part on him, including Jack Crawford in Thomas Harris' <i>The Silence of the Lambs</i>, Will Graham on <i>Hannibal</i> and Jason Gideon on <i>Criminal Minds</i>.</p>\",\n            \"updated\": 1643096917,\n            \"_links\": {\n                \"self\": {\n                    \"href\": \"https://api.tvmaze.com/shows/10822\"\n                },\n                \"previousepisode\": {\n                    \"href\": \"https://api.tvmaze.com/episodes/1697718\"\n                }\n            }\n        }\n    },\n    {\n        \"score\": 0.3376205,\n        \"show\": {\n            \"id\": 62005,\n            \"url\": \"https://www.tvmaze.com/shows/62005/the-first-mindhunter\",\n            \"name\": \"The First Mindhunter\",\n            \"type\": \"Documentary\",\n            \"language\": \"English\",\n            \"genres\": [\n                \"Crime\"\n            ],\n            \"status\": \"In Development\",\n            \"runtime\": null,\n            \"averageRuntime\": null,\n            \"premiered\": null,\n            \"ended\": null,\n            \"officialSite\": null,\n            \"schedule\": {\n                \"time\": \"\",\n                \"days\": []\n            },\n            \"rating\": {\n                \"average\": null\n            },\n            \"weight\": 38,\n            \"network\": {\n                \"id\": 79,\n                \"name\": \"Oxygen\",\n                \"country\": {\n                    \"name\": \"United States\",\n                    \"code\": \"US\",\n                    \"timezone\": \"America/New_York\"\n                },\n                \"officialSite\": null\n            },\n            \"webChannel\": null,\n            \"dvdCountry\": null,\n            \"externals\": {\n                \"tvrage\": null,\n                \"thetvdb\": null,\n                \"imdb\": null\n            },\n            \"image\": null,\n            \"summary\": \"<p>This unique event series unboxes the lost life's work of the enigmatic Dr. Carlisle and his hundreds of hours of never-before-heard recorded interviews with the likes of Ted Bundy, Arthur Gary Bishop, Hi-Fi Killers and Manny Cortez. Each episode will zero in on the twisted thoughts of a killer and the chilling insights Dr. Carlisle pulled from their minds. Dr. Carlisle's inner circle will work with detectives, using his recordings and research to bring to light new clues in these notorious cases.</p>\",\n            \"updated\": 1652232127,\n            \"_links\": {\n                \"self\": {\n                    \"href\": \"https://api.tvmaze.com/shows/62005\"\n                }\n            }\n        }\n    }\n]"
 						}
 					]
 				},
@@ -832,24 +832,24 @@
 	],
 	"variable": [
 		{
-			"id": "08dc5f6e-e566-4ee8-ac0d-9f41e126a8d3",
+			"id": "e6a5ea87-e80b-438e-919e-becf97b11525",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "17533115-8bfd-408d-bdb5-46ff33b59f2f",
+			"id": "5c56ffe2-6eb0-4ace-b034-ab0271484f28",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "c28a3335-5206-423b-8f99-3018a59eaaaf",
+			"id": "e416dfcd-8b7c-4f6e-ab60-fa510e4e8f39",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "cce745e4-ac68-4977-8349-066dead8561e",
+			"id": "baaa1b9b-c5bb-45f3-9a54-806b6ee9d393",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
