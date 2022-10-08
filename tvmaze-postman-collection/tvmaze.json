@@ -125,13 +125,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "x-mock-response-name",
-								"value": "",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
 							"protocol": "https",
