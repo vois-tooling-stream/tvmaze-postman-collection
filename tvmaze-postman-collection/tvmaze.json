@@ -93,7 +93,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{mock_uri}}/singlesearch/shows?q=true%20detective",
+									"raw": "{{mock_uri}}/singlesearch/shows?q=game of thrones",
 									"host": [
 										"{{mock_uri}}"
 									],
@@ -104,7 +104,7 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "true%20detective"
+											"value": "game of thrones"
 										}
 									]
 								}
@@ -114,7 +114,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "[\n    {\n        \"score\": 0.5204634,\n        \"show\": {\n            \"id\": 10822,\n            \"url\": \"https://www.tvmaze.com/shows/10822/mindhunter\",\n            \"name\": \"MINDHUNTER\",\n            \"type\": \"Scripted\",\n            \"language\": \"English\",\n            \"genres\": [\n                \"Drama\",\n                \"Crime\",\n                \"Thriller\"\n            ],\n            \"status\": \"Ended\",\n            \"runtime\": null,\n            \"averageRuntime\": 54,\n            \"premiered\": \"2017-10-13\",\n            \"ended\": \"2019-08-16\",\n            \"officialSite\": \"https://www.netflix.com/title/80114855\",\n            \"schedule\": {\n                \"time\": \"\",\n                \"days\": []\n            },\n            \"rating\": {\n                \"average\": 8.4\n            },\n            \"weight\": 97,\n            \"network\": null,\n            \"webChannel\": {\n                \"id\": 1,\n                \"name\": \"Netflix\",\n                \"country\": null,\n                \"officialSite\": \"https://www.netflix.com/\"\n            },\n            \"dvdCountry\": null,\n            \"externals\": {\n                \"tvrage\": null,\n                \"thetvdb\": 328708,\n                \"imdb\": \"tt5290382\"\n            },\n            \"image\": {\n                \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/207/518594.jpg\",\n                \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/207/518594.jpg\"\n            },\n            \"summary\": \"<p><b>MINDHUNTER</b> is based on the 1996 book<i> Mind Hunter: Inside the FBI's Elite Serial Crime Unit</i>, by former special agent John Douglas and Mark Olshaker. For years, Douglas pursued some of the most notorious serial killers and rapists, developing profiling techniques to catch them. The book goes behind the scenes of some of his highest-profile cases, including the man who hunted prostitutes in Alaska, the Atlanta child murderer, and Seattle's Green River killer. To hone in his profiling methods Douglas interviewed and studied a skew of serial killers. Several book and TV characters have been based in part on him, including Jack Crawford in Thomas Harris' <i>The Silence of the Lambs</i>, Will Graham on <i>Hannibal</i> and Jason Gideon on <i>Criminal Minds</i>.</p>\",\n            \"updated\": 1643096917,\n            \"_links\": {\n                \"self\": {\n                    \"href\": \"https://api.tvmaze.com/shows/10822\"\n                },\n                \"previousepisode\": {\n                    \"href\": \"https://api.tvmaze.com/episodes/1697718\"\n                }\n            }\n        }\n    },\n    {\n        \"score\": 0.3376205,\n        \"show\": {\n            \"id\": 62005,\n            \"url\": \"https://www.tvmaze.com/shows/62005/the-first-mindhunter\",\n            \"name\": \"The First Mindhunter\",\n            \"type\": \"Documentary\",\n            \"language\": \"English\",\n            \"genres\": [\n                \"Crime\"\n            ],\n            \"status\": \"In Development\",\n            \"runtime\": null,\n            \"averageRuntime\": null,\n            \"premiered\": null,\n            \"ended\": null,\n            \"officialSite\": null,\n            \"schedule\": {\n                \"time\": \"\",\n                \"days\": []\n            },\n            \"rating\": {\n                \"average\": null\n            },\n            \"weight\": 38,\n            \"network\": {\n                \"id\": 79,\n                \"name\": \"Oxygen\",\n                \"country\": {\n                    \"name\": \"United States\",\n                    \"code\": \"US\",\n                    \"timezone\": \"America/New_York\"\n                },\n                \"officialSite\": null\n            },\n            \"webChannel\": null,\n            \"dvdCountry\": null,\n            \"externals\": {\n                \"tvrage\": null,\n                \"thetvdb\": null,\n                \"imdb\": null\n            },\n            \"image\": null,\n            \"summary\": \"<p>This unique event series unboxes the lost life's work of the enigmatic Dr. Carlisle and his hundreds of hours of never-before-heard recorded interviews with the likes of Ted Bundy, Arthur Gary Bishop, Hi-Fi Killers and Manny Cortez. Each episode will zero in on the twisted thoughts of a killer and the chilling insights Dr. Carlisle pulled from their minds. Dr. Carlisle's inner circle will work with detectives, using his recordings and research to bring to light new clues in these notorious cases.</p>\",\n            \"updated\": 1652232127,\n            \"_links\": {\n                \"self\": {\n                    \"href\": \"https://api.tvmaze.com/shows/62005\"\n                }\n            }\n        }\n    }\n]"
+							"body": "{\n    \"id\": 82,\n    \"url\": \"https://www.tvmaze.com/shows/82/game-of-thrones\",\n    \"name\": \"Game of Thrones\",\n    \"type\": \"Scripted\",\n    \"language\": \"English\",\n    \"genres\": [\n        \"Drama\",\n        \"Adventure\",\n        \"Fantasy\"\n    ],\n    \"status\": \"Ended\",\n    \"runtime\": 60,\n    \"averageRuntime\": 61,\n    \"premiered\": \"2011-04-17\",\n    \"ended\": \"2019-05-19\",\n    \"officialSite\": \"http://www.hbo.com/game-of-thrones\",\n    \"schedule\": {\n        \"time\": \"21:00\",\n        \"days\": [\n            \"Sunday\"\n        ]\n    },\n    \"rating\": {\n        \"average\": 8.9\n    },\n    \"weight\": 99,\n    \"network\": {\n        \"id\": 8,\n        \"name\": \"HBO\",\n        \"country\": {\n            \"name\": \"United States\",\n            \"code\": \"US\",\n            \"timezone\": \"America/New_York\"\n        },\n        \"officialSite\": \"https://www.hbo.com/\"\n    },\n    \"webChannel\": null,\n    \"dvdCountry\": null,\n    \"externals\": {\n        \"tvrage\": 24493,\n        \"thetvdb\": 121361,\n        \"imdb\": \"tt0944947\"\n    },\n    \"image\": {\n        \"medium\": \"https://static.tvmaze.com/uploads/images/medium_portrait/190/476117.jpg\",\n        \"original\": \"https://static.tvmaze.com/uploads/images/original_untouched/190/476117.jpg\"\n    },\n    \"summary\": \"<p>Based on the bestselling book series <i>A Song of Ice and Fire</i> by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the <b>Game of Thrones</b>, you either win or you die.</p>\",\n    \"updated\": 1658720459,\n    \"_links\": {\n        \"self\": {\n            \"href\": \"https://api.tvmaze.com/shows/82\"\n        },\n        \"previousepisode\": {\n            \"href\": \"https://api.tvmaze.com/episodes/1623968\"\n        }\n    }\n}"
 						}
 					]
 				},
@@ -868,24 +868,24 @@
 	],
 	"variable": [
 		{
-			"id": "19e10f8e-ee56-4758-8fa4-1b3d5f69eaaa",
+			"id": "34bbca64-05f7-45ac-928d-282adc7ed2ee",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "b0f9b410-1462-4bb6-9bc8-96ac54c285b6",
+			"id": "ac1ad974-32d7-4942-9db1-522285a00161",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "b396290f-d92e-478f-b22f-60cb1ffae99f",
+			"id": "346afb81-6549-45c1-becb-bf43469f237e",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "4ebd3b2a-c277-4e50-aa5a-54ffcccab06d",
+			"id": "47e5d59d-c62d-4d11-bde1-7cffd9175170",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
