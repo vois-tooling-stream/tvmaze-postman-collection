@@ -22,8 +22,7 @@
 							{
 								"key": "x-mock-response-name",
 								"value": "TVSearch_SingleSearch_GetShowEpisodes_200",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							},
 							{
 								"key": "x-mock-response-name",
@@ -47,8 +46,8 @@
 									"value": "true%20detective"
 								},
 								{
-									"key": "",
-									"value": "",
+									"key": "q",
+									"value": "game of thrones",
 									"disabled": true
 								}
 							]
@@ -868,24 +867,24 @@
 	],
 	"variable": [
 		{
-			"id": "9d15bc8b-da12-4c7b-92c4-e022640aa362",
+			"id": "3c8673b8-d7e7-4418-af97-3a63e95bd95d",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "a4c7c0c4-cc77-4e3c-908f-779358ce6b33",
+			"id": "f52fcdb3-8ec4-4fde-8b26-c824cde3ff36",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "b67e0bea-54bb-4f24-b2fb-cc511794c125",
+			"id": "b66a0178-f90e-4280-bff6-7c00548acd68",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "707da36a-42a0-4d71-a34f-6614c9e7f3ed",
+			"id": "2709fc9a-1bdf-4950-b831-71e5f1286141",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
