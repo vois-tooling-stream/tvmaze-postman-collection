@@ -427,7 +427,7 @@
 								"method": "GET",
 								"header": [
 									{
-										"key": "example",
+										"key": "x-mock-response-name",
 										"value": "ee",
 										"type": "text",
 										"disabled": true
@@ -873,24 +873,24 @@
 	],
 	"variable": [
 		{
-			"id": "fded52fd-a5f4-48f7-ad79-3cf5a1aacf51",
+			"id": "bbc0b605-5fe2-4df1-aff7-fbdb0dd02dfc",
 			"key": "mocksConfigURL",
 			"value": "https://vois-tooling-stream.github.io/tvmaze-postman-collection/mocksConfig.json",
 			"type": "string"
 		},
 		{
-			"id": "bdc8d876-edcb-4e36-8460-ce5ac64fb0c8",
+			"id": "4bdf0fc3-9aee-4c55-8f9e-5b8f5f3e96b1",
 			"key": "selectedTestCase",
 			"value": "testcase_example2",
 			"type": "string"
 		},
 		{
-			"id": "b021a431-40b0-4ea9-85e7-8349924982b3",
+			"id": "0e89597a-e289-4a0d-a313-528539df5888",
 			"key": "mocksConfig",
 			"value": ""
 		},
 		{
-			"id": "b3676d84-5c81-47db-b656-446b4affd696",
+			"id": "d1dd2251-0be3-437a-aa1b-32244ac0e1dd",
 			"key": "apiKey",
 			"value": "PMAK-632b03e01f230a20eea1fab5-f25b87e32028411edffd751e168f4d7585",
 			"type": "string"
