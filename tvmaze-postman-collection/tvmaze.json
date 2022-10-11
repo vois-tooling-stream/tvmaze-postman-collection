@@ -125,7 +125,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "x-mock-response-name",
+								"value": "",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "https://api.tvmaze.com/search/shows1?q=arrow",
 							"protocol": "https",
@@ -632,7 +638,13 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "x-mock-response-name",
+										"value": "",
+										"type": "text"
+									}
+								],
 								"url": "{{mock_uri}}/shows/1/seasons"
 							},
 							"response": [
